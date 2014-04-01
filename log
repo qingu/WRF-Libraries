@@ -1,0 +1,3566 @@
+make -C src distclean
+make[1]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+rm -rf /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4
+rm -rf /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4
+rm -rf /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4
+rm -rf /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4
+make clean_doc
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+make -C doc clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/doc'
+rm -f *.tex *.ps *.pdf
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/doc'
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'
+make clean_zlib
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+rm -f zlib-1.2.6/zlib-1.2.6.config
+rm -f zlib-1.2.6/zlib-1.2.6.install
+make -C zlib-1.2.6 clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/zlib-1.2.6'
+rm -f *.o *.lo *~ \
+	   example minigzip examplesh minigzipsh \
+	   example64 minigzip64 \
+	   infcover \
+	   libz.* foo.gz so_locations \
+	   _match.s maketree contrib/infback9/*.o
+rm -rf objs
+rm -f *.gcda *.gcno *.gcov
+rm -f contrib/infback9/*.gcda contrib/infback9/*.gcno contrib/infback9/*.gcov
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/zlib-1.2.6'
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'
+make clean_jasper
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+rm -f jasper-1.900.1/jasper-1.900.1.config
+rm -f jasper-1.900.1/jasper-1.900.1.install
+make -C jasper-1.900.1 clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1'
+failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src' ;; \
+	  *) list='src' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in src
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src'
+failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='libjasper appl msvc' ;; \
+	  *) list='libjasper appl msvc' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in msvc
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/msvc'
+rm -rf .libs _libs
+rm -rf *Win32_Debug *Win32_Release
+rm -rf Release Debug
+rm -rf *.ncb *.opt *.plg
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/msvc'
+Making clean in appl
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/appl'
+list='jasper  imgcmp imginfo tmrdemo'; for p in $list; do \
+	  f=`echo $p|sed 's/$//'`; \
+	  echo " rm -f $p $f"; \
+	  rm -f $p $f ; \
+	done
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/appl'
+Making clean in libjasper
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper'
+failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='include base bmp jp2 jpc jpg mif pgx pnm ras' ;; \
+	  *) list='include base bmp jp2 jpc jpg mif pgx pnm ras' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in ras
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/ras'
+rm -rf .libs _libs
+test -z "libras.la" || rm -f libras.la
+list='libras.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/ras'
+Making clean in pnm
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/pnm'
+rm -rf .libs _libs
+test -z "libpnm.la" || rm -f libpnm.la
+list='libpnm.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/pnm'
+Making clean in pgx
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/pgx'
+rm -rf .libs _libs
+test -z "libpgx.la" || rm -f libpgx.la
+list='libpgx.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/pgx'
+Making clean in mif
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/mif'
+rm -rf .libs _libs
+test -z "libmif.la" || rm -f libmif.la
+list='libmif.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/mif'
+Making clean in jpg
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/jpg'
+rm -rf .libs _libs
+test -z "libjpg.la" || rm -f libjpg.la
+list='libjpg.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/jpg'
+Making clean in jpc
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/jpc'
+rm -rf .libs _libs
+test -z "libjpc.la" || rm -f libjpc.la
+list='libjpc.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/jpc'
+Making clean in jp2
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/jp2'
+rm -rf .libs _libs
+test -z "libjp2.la" || rm -f libjp2.la
+list='libjp2.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/jp2'
+Making clean in bmp
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/bmp'
+rm -rf .libs _libs
+test -z "libbmp.la" || rm -f libbmp.la
+list='libbmp.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/bmp'
+Making clean in base
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/base'
+rm -rf .libs _libs
+test -z "libbase.la" || rm -f libbase.la
+list='libbase.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/base'
+Making clean in include
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/include'
+failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='jasper' ;; \
+	  *) list='jasper' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in jasper
+make[7]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/include/jasper'
+rm -rf .libs _libs
+rm -f *.lo
+make[7]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/include/jasper'
+Making clean in .
+make[7]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[7]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/include'
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper/include'
+Making clean in .
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper'
+test -z "libjasper.la" || rm -f libjasper.la
+list='libjasper.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper'
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src/libjasper'
+Making clean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1/src'
+Making clean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1'
+rm -rf .libs _libs
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1'
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/jasper-1.900.1'
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'
+make clean_libpng
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+rm -f libpng-1.6.9/libpng-1.6.9.config
+rm -f libpng-1.6.9/libpng-1.6.9.install
+make -C libpng-1.6.9 clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/libpng-1.6.9'
+list='pngfix png-fix-itxt'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='pngtest pngunknown pngstest pngvalid'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "*.tf? pngout.png libpng16.pc libpng16-config libpng.vers libpng.sym check.new pnglibconf.* pngprefix.h symbols.new pngtest-log.txt scripts/*.out scripts/*.chk scripts/pnglibconf.dfn" || rm -f *.tf? pngout.png libpng16.pc libpng16-config libpng.vers libpng.sym check.new pnglibconf.* pngprefix.h symbols.new pngtest-log.txt scripts/*.out scripts/*.chk scripts/pnglibconf.dfn
+test -z "libpng16.la" || rm -f libpng16.la
+list='libpng16.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+rm -rf arm/.libs arm/_libs
+rm -f *.o
+rm -f arm/*.o
+rm -f arm/*.lo
+rm -f contrib/libtests/*.o
+rm -f contrib/tools/*.o
+test -z "tests/pngtest.log tests/pngvalid-gamma-16-to-8.log tests/pngvalid-gamma-alpha-mode.log tests/pngvalid-gamma-background.log tests/pngvalid-gamma-expand16-alpha-mode.log tests/pngvalid-gamma-expand16-background.log tests/pngvalid-gamma-expand16-transform.log tests/pngvalid-gamma-sbit.log tests/pngvalid-gamma-threshold.log tests/pngvalid-gamma-transform.log tests/pngvalid-progressive-interlace-size.log tests/pngvalid-progressive-interlace-standard.log tests/pngvalid-progressive-interlace-transform.log tests/pngvalid-progressive-standard.log tests/pngvalid-standard.log tests/pngstest-0g01.log tests/pngstest-0g02.log tests/pngstest-0g04.log tests/pngstest-0g08.log tests/pngstest-0g16.log tests/pngstest-2c08.log tests/pngstest-2c16.log tests/pngstest-3p01.log tests/pngstest-3p02.log tests/pngstest-3p04.log tests/pngstest-3p08.log tests/pngstest-4a08.log tests/pngstest-4a16.log tests/pngstest-6a08.log tests/pngstest-6a16.log tests/pngstest-error.log tests/pngunknown-IDAT.log tests/pngunknown-discard.log tests/pngunknown-if-safe.log tests/pngunknown-sAPI.log tests/pngunknown-sTER.log tests/pngunknown-save.log tests/pngunknown-vpAg.log" || rm -f tests/pngtest.log tests/pngvalid-gamma-16-to-8.log tests/pngvalid-gamma-alpha-mode.log tests/pngvalid-gamma-background.log tests/pngvalid-gamma-expand16-alpha-mode.log tests/pngvalid-gamma-expand16-background.log tests/pngvalid-gamma-expand16-transform.log tests/pngvalid-gamma-sbit.log tests/pngvalid-gamma-threshold.log tests/pngvalid-gamma-transform.log tests/pngvalid-progressive-interlace-size.log tests/pngvalid-progressive-interlace-standard.log tests/pngvalid-progressive-interlace-transform.log tests/pngvalid-progressive-standard.log tests/pngvalid-standard.log tests/pngstest-0g01.log tests/pngstest-0g02.log tests/pngstest-0g04.log tests/pngstest-0g08.log tests/pngstest-0g16.log tests/pngstest-2c08.log tests/pngstest-2c16.log tests/pngstest-3p01.log tests/pngstest-3p02.log tests/pngstest-3p04.log tests/pngstest-3p08.log tests/pngstest-4a08.log tests/pngstest-4a16.log tests/pngstest-6a08.log tests/pngstest-6a16.log tests/pngstest-error.log tests/pngunknown-IDAT.log tests/pngunknown-discard.log tests/pngunknown-if-safe.log tests/pngunknown-sAPI.log tests/pngunknown-sTER.log tests/pngunknown-save.log tests/pngunknown-vpAg.log
+test -z "tests/pngtest.trs tests/pngvalid-gamma-16-to-8.trs tests/pngvalid-gamma-alpha-mode.trs tests/pngvalid-gamma-background.trs tests/pngvalid-gamma-expand16-alpha-mode.trs tests/pngvalid-gamma-expand16-background.trs tests/pngvalid-gamma-expand16-transform.trs tests/pngvalid-gamma-sbit.trs tests/pngvalid-gamma-threshold.trs tests/pngvalid-gamma-transform.trs tests/pngvalid-progressive-interlace-size.trs tests/pngvalid-progressive-interlace-standard.trs tests/pngvalid-progressive-interlace-transform.trs tests/pngvalid-progressive-standard.trs tests/pngvalid-standard.trs tests/pngstest-0g01.trs tests/pngstest-0g02.trs tests/pngstest-0g04.trs tests/pngstest-0g08.trs tests/pngstest-0g16.trs tests/pngstest-2c08.trs tests/pngstest-2c16.trs tests/pngstest-3p01.trs tests/pngstest-3p02.trs tests/pngstest-3p04.trs tests/pngstest-3p08.trs tests/pngstest-4a08.trs tests/pngstest-4a16.trs tests/pngstest-6a08.trs tests/pngstest-6a16.trs tests/pngstest-error.trs tests/pngunknown-IDAT.trs tests/pngunknown-discard.trs tests/pngunknown-if-safe.trs tests/pngunknown-sAPI.trs tests/pngunknown-sTER.trs tests/pngunknown-save.trs tests/pngunknown-vpAg.trs" || rm -f tests/pngtest.trs tests/pngvalid-gamma-16-to-8.trs tests/pngvalid-gamma-alpha-mode.trs tests/pngvalid-gamma-background.trs tests/pngvalid-gamma-expand16-alpha-mode.trs tests/pngvalid-gamma-expand16-background.trs tests/pngvalid-gamma-expand16-transform.trs tests/pngvalid-gamma-sbit.trs tests/pngvalid-gamma-threshold.trs tests/pngvalid-gamma-transform.trs tests/pngvalid-progressive-interlace-size.trs tests/pngvalid-progressive-interlace-standard.trs tests/pngvalid-progressive-interlace-transform.trs tests/pngvalid-progressive-standard.trs tests/pngvalid-standard.trs tests/pngstest-0g01.trs tests/pngstest-0g02.trs tests/pngstest-0g04.trs tests/pngstest-0g08.trs tests/pngstest-0g16.trs tests/pngstest-2c08.trs tests/pngstest-2c16.trs tests/pngstest-3p01.trs tests/pngstest-3p02.trs tests/pngstest-3p04.trs tests/pngstest-3p08.trs tests/pngstest-4a08.trs tests/pngstest-4a16.trs tests/pngstest-6a08.trs tests/pngstest-6a16.trs tests/pngstest-error.trs tests/pngunknown-IDAT.trs tests/pngunknown-discard.trs tests/pngunknown-if-safe.trs tests/pngunknown-sAPI.trs tests/pngunknown-sTER.trs tests/pngunknown-save.trs tests/pngunknown-vpAg.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f *.lo
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/libpng-1.6.9'
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'
+make clean_hdf5
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+rm -f hdf5-1.8.12/hdf5-1.8.12.config
+rm -f hdf5-1.8.12/hdf5-1.8.12.install
+make -C hdf5-1.8.12 clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test testpar tools . c++ fortran hl perform examples' ;; \
+	  *) list='src test  tools .   hl perform' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making clean in src
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/src'
+test -z "libhdf5.la" || rm -f libhdf5.la
+list='libhdf5.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+list='H5detect H5make_libsettings'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+test -z "H5Tinit.c H5lib_settings.c" || rm -f H5Tinit.c H5lib_settings.c
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/src'
+Making clean in test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/test'
+list='testhdf5 lheap ohdr stab gheap cache cache_api pool accum hyperslab istore bittests dt_arith dtypes dsets cmpd_dset filter_fail extend external efc objcopy links unlink big mtime fillval mount flush1 flush2 app_ref enum set_extent ttsafe getname vfd ntypes dangle dtransform reserved cross_read freespace mf btree2 fheap file_image unregister error_test err_compat tcheck_version testmeta links_env '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "" || rm -f 
+list=''; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+test -z "libh5test.la" || rm -f libh5test.la
+list='libh5test.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog accum.h5 cmpd_dset.h5 compact_dataset.h5 dataset.h5 dset_offset.h5 max_compact_dataset.h5 simple.h5 set_local.h5 random_chunks.h5 huge_chunks.h5 chunk_cache.h5 big_chunk.h5 chunk_expand.h5 copy_dcpl_newfile.h5 extend.h5 istore.h5 extlinks*.h5 frspace.h5 links*.h5 sys_file1 tfile[1-7].h5 th5s[1-4].h5 lheap.h5 fheap.h5 ohdr.h5 stab.h5 extern_[1-3].h5 extern_[1-4][ab].raw gheap[0-4].h5 dt_arith[1-2] links.h5 links[0-6]*.h5 extlinks[0-15].h5 tmp big.data big[0-9][0-9][0-9][0-9][0-9].h5 stdio.h5 sec2.h5 dtypes[0-9].h5 dtypes1[0].h5 dt_arith[1-2].h5 tattr.h5 tselect.h5 mtime.h5 unlink.h5 unicode.h5 coord.h5 fillval_[0-9].h5 fillval.raw mount_[0-9].h5 testmeta.h5 ttime.h5 trefer[1-3].h5 tvltypes.h5 tvlstr.h5 tvlstr2.h5 flush.h5 enum1.h5 titerate.h5 ttsafe.h5 tarray1.h5 tgenprop.h5 tmisc[0-9]*.h5 set_extent[1-5].h5 ext[12].bin getname.h5 getname[1-3].h5 sec2_file.h5 direct_file.h5 family_file000[0-3][0-9].h5 new_family_v16_000[0-3][0-9].h5 multi_file-[rs].h5 core_file plugin.h5 new_move_[ab].h5 ntypes.h5 dangle.h5 error_test.h5 err_compat.h5 dtransform.h5 test_filters.h5 get_file_name.h5 tstint[1-2].h5 unlink_chunked.h5 btree2.h5 objcopy_src.h5 objcopy_dst.h5 objcopy_ext.dat trefer1.h5 trefer2.h5 app_ref.h5 tcheck_version_*.out tcheck_version_*.err efc[0-5].h5 log_vfd_out.log new_multi_file_v16-r.h5 new_multi_file_v16-s.h5 split_get_file_image_test-m.h5 split_get_file_image_test-r.h5 file_image_core_test.h5.copy unregister_filter_1.h5 unregister_filter_2.h5
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/test'
+Making clean in tools
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='lib h5diff h5ls h5dump misc h5import h5repack h5jam h5copy h5stat' ;; \
+	  *) list='lib h5diff h5ls h5dump misc h5import h5repack h5jam h5copy h5stat' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making clean in lib
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/lib'
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+test -z "libh5tools.la" || rm -f libh5tools.la
+list='libh5tools.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/lib'
+Making clean in h5diff
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5diff'
+list='h5diff '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5diffgentest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 expect_sorted actual_sorted
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5diff'
+Making clean in h5ls
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5ls'
+list='h5ls'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5ls'
+Making clean in h5dump
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5dump'
+list='h5dump'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5dumpgentest binread'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 *.bin
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5dump'
+Making clean in misc
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/misc'
+list='h5debug h5repart h5mkgrp'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5repart_gentest talign repart_test'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "h5redeploy" || rm -f h5redeploy
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 ../testfiles/fst_family*.h5 ../testfiles/scd_family*.h5
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/misc'
+Making clean in h5import
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5import'
+list='h5import'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5importtest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.bin
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5import'
+Making clean in h5repack
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5repack'
+list='h5repack'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5repacktst'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "" || rm -f 
+list=''; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+list='testh5repack_detect_szip'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 *.bin
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5repack'
+Making clean in h5jam
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5jam'
+list='h5jam h5unjam'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='tellub h5jamgentest getub'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5jam'
+Making clean in h5copy
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5copy'
+list='h5copy'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5copygentest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5copy'
+Making clean in h5stat
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5stat'
+list='h5stat'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5stat_gentest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "" || rm -f 
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 ../testfiles/fst_family*.h5 ../testfiles/scd_family*.h5
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5stat'
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+Making clean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+rm -rf .libs _libs
+rm -f *.lo
+if test -d ii_files; then                                       \
+	  rm -f -rf ii_files;                                           \
+	fi
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+Making clean in hl
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test tools c++ fortran examples' ;; \
+	  *) list='src test tools  ' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making clean in src
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/src'
+test -z "libhdf5_hl.la" || rm -f libhdf5_hl.la
+list='libhdf5_hl.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/src'
+Making clean in test
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/test'
+list='test_lite test_image test_file_image test_table test_ds test_packet test_dset_opt'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog combine_tables[1-2].h5 test_ds[1-9].h5 test_ds10.h5 test_image[1-3].h5 file_img[1-2].h5 test_lite[1-4].h5 test_table.h5 test_packet_table.h5 test_packet_compress.h5 test_detach.h5 test_dectris.h5
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/test'
+Making clean in tools
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='gif2h5' ;; \
+	  *) list='gif2h5' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making clean in gif2h5
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools/gif2h5'
+list='gif2h5 h52gif'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+list='h52gifgentst'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 *.gif
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools/gif2h5'
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+Making clean in perform
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/perform'
+list='h5perf_serial'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='iopipe chunk overhead zip_perf perf_meta  perf'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "*.h5 *.raw *.dat x-gnuplot perftest.out" || rm -f *.h5 *.raw *.dat x-gnuplot perftest.out
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/perform'
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'
+make -C hdf5-1.8.12     distclean
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test testpar tools . c++ fortran hl perform examples' ;; \
+	  *) list='src test  tools .   hl perform' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in src
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/src'
+test -z "libhdf5.la" || rm -f libhdf5.la
+list='libhdf5.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+list='H5detect H5make_libsettings'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+test -z "H5Tinit.c H5lib_settings.c" || rm -f H5Tinit.c H5lib_settings.c
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "libhdf5.settings" || rm -f libhdf5.settings
+test . = "." || test -z "" || rm -f 
+test -z "H5pubconf.h" || rm -f H5pubconf.h
+rm -f H5config.h stamp-h1
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/src'
+Making distclean in test
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/test'
+list='testhdf5 lheap ohdr stab gheap cache cache_api pool accum hyperslab istore bittests dt_arith dtypes dsets cmpd_dset filter_fail extend external efc objcopy links unlink big mtime fillval mount flush1 flush2 app_ref enum set_extent ttsafe getname vfd ntypes dangle dtransform reserved cross_read freespace mf btree2 fheap file_image unregister error_test err_compat tcheck_version testmeta links_env '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "" || rm -f 
+list=''; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+test -z "libh5test.la" || rm -f libh5test.la
+list='libh5test.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog accum.h5 cmpd_dset.h5 compact_dataset.h5 dataset.h5 dset_offset.h5 max_compact_dataset.h5 simple.h5 set_local.h5 random_chunks.h5 huge_chunks.h5 chunk_cache.h5 big_chunk.h5 chunk_expand.h5 copy_dcpl_newfile.h5 extend.h5 istore.h5 extlinks*.h5 frspace.h5 links*.h5 sys_file1 tfile[1-7].h5 th5s[1-4].h5 lheap.h5 fheap.h5 ohdr.h5 stab.h5 extern_[1-3].h5 extern_[1-4][ab].raw gheap[0-4].h5 dt_arith[1-2] links.h5 links[0-6]*.h5 extlinks[0-15].h5 tmp big.data big[0-9][0-9][0-9][0-9][0-9].h5 stdio.h5 sec2.h5 dtypes[0-9].h5 dtypes1[0].h5 dt_arith[1-2].h5 tattr.h5 tselect.h5 mtime.h5 unlink.h5 unicode.h5 coord.h5 fillval_[0-9].h5 fillval.raw mount_[0-9].h5 testmeta.h5 ttime.h5 trefer[1-3].h5 tvltypes.h5 tvlstr.h5 tvlstr2.h5 flush.h5 enum1.h5 titerate.h5 ttsafe.h5 tarray1.h5 tgenprop.h5 tmisc[0-9]*.h5 set_extent[1-5].h5 ext[12].bin getname.h5 getname[1-3].h5 sec2_file.h5 direct_file.h5 family_file000[0-3][0-9].h5 new_family_v16_000[0-3][0-9].h5 multi_file-[rs].h5 core_file plugin.h5 new_move_[ab].h5 ntypes.h5 dangle.h5 error_test.h5 err_compat.h5 dtransform.h5 test_filters.h5 get_file_name.h5 tstint[1-2].h5 unlink_chunked.h5 btree2.h5 objcopy_src.h5 objcopy_dst.h5 objcopy_ext.dat trefer1.h5 trefer2.h5 app_ref.h5 tcheck_version_*.out tcheck_version_*.err efc[0-5].h5 log_vfd_out.log new_multi_file_v16-r.h5 new_multi_file_v16-s.h5 split_get_file_image_test-m.h5 split_get_file_image_test-r.h5 file_image_core_test.h5.copy unregister_filter_1.h5 unregister_filter_2.h5
+rm -f *.tab.c
+test -z "testcheck_version.sh testerror.sh H5srcdir_str.h testlibinfo.sh testlinks_env.sh test_plugin.sh" || rm -f testcheck_version.sh testerror.sh H5srcdir_str.h testlibinfo.sh testlinks_env.sh test_plugin.sh
+test . = "." || test -z "" || rm -f 
+test -z "testerror.sh testlibinfo.sh testcheck_version.sh testlinks_env.sh test_plugin.sh" || rm -f testerror.sh testlibinfo.sh testcheck_version.sh testlinks_env.sh test_plugin.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/test'
+Making distclean in testpar
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/testpar'
+list='t_mpi t_posix_compliant testphdf5 t_cache t_pflush1 t_pflush2 t_shapesame'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog MPItest.h5 Para*.h5 CacheTestDummy.h5 go
+rm -f *.tab.c
+test -z "testph5.sh" || rm -f testph5.sh
+test . = "." || test -z "" || rm -f 
+test -z "testph5.sh" || rm -f testph5.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/testpar'
+Making distclean in tools
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='lib h5diff h5ls h5dump misc h5import h5repack h5jam h5copy h5stat' ;; \
+	  *) list='lib h5diff h5ls h5dump misc h5import h5repack h5jam h5copy h5stat' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in lib
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/lib'
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+test -z "libh5tools.la" || rm -f libh5tools.la
+list='libh5tools.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/lib'
+Making distclean in h5diff
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5diff'
+list='h5diff '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5diffgentest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 expect_sorted actual_sorted
+rm -f *.tab.c
+test -z "testh5diff.sh testph5diff.sh" || rm -f testh5diff.sh testph5diff.sh
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5diff'
+Making distclean in h5ls
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5ls'
+list='h5ls'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "testh5ls.sh" || rm -f testh5ls.sh
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5ls'
+Making distclean in h5dump
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5dump'
+list='h5dump'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5dumpgentest binread'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 *.bin
+rm -f *.tab.c
+test -z "testh5dump.sh testh5dumppbits.sh testh5dumpxml.sh" || rm -f testh5dump.sh testh5dumppbits.sh testh5dumpxml.sh
+test . = "." || test -z "" || rm -f 
+test -z "testh5dump.sh testh5dumppbits.sh testh5dumpxml.sh" || rm -f testh5dump.sh testh5dumppbits.sh testh5dumpxml.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5dump'
+Making distclean in misc
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/misc'
+list='h5debug h5repart h5mkgrp'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5repart_gentest talign repart_test'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "h5redeploy" || rm -f h5redeploy
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 ../testfiles/fst_family*.h5 ../testfiles/scd_family*.h5
+rm -f *.tab.c
+test -z "h5cc testh5mkgrp.sh testh5repart.sh" || rm -f h5cc testh5mkgrp.sh testh5repart.sh
+test . = "." || test -z "" || rm -f 
+test -z "h5cc testh5repart.sh" || rm -f h5cc testh5repart.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/misc'
+Making distclean in h5import
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5import'
+list='h5import'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5importtest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.bin
+rm -f *.tab.c
+test -z "h5importtestutil.sh" || rm -f h5importtestutil.sh
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5import'
+Making distclean in h5repack
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5repack'
+list='h5repack'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5repacktst'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "" || rm -f 
+list=''; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+list='testh5repack_detect_szip'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 *.bin
+rm -f *.tab.c
+test -z "h5repack.sh h5repack_plugin.sh" || rm -f h5repack.sh h5repack_plugin.sh
+test . = "." || test -z "" || rm -f 
+test -z "h5repack.sh h5repack_plugin.sh" || rm -f h5repack.sh h5repack_plugin.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5repack'
+Making distclean in h5jam
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5jam'
+list='h5jam h5unjam'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='tellub h5jamgentest getub'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+rm -f *.tab.c
+test -z "testh5jam.sh" || rm -f testh5jam.sh
+test . = "." || test -z "" || rm -f 
+test -z "testh5jam.sh" || rm -f testh5jam.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5jam'
+Making distclean in h5copy
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5copy'
+list='h5copy'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5copygentest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+rm -f *.tab.c
+test -z "testh5copy.sh" || rm -f testh5copy.sh
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5copy'
+Making distclean in h5stat
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5stat'
+list='h5stat'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='h5stat_gentest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "" || rm -f 
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 ../testfiles/fst_family*.h5 ../testfiles/scd_family*.h5
+rm -f *.tab.c
+test -z "testh5stat.sh" || rm -f testh5stat.sh
+test . = "." || test -z "" || rm -f 
+test -z "testh5stat.sh" || rm -f testh5stat.sh
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools/h5stat'
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/tools'
+Making distclean in .
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+rm -rf .libs _libs
+rm -f *.lo
+if test -d ii_files; then                                       \
+	  rm -f -rf ii_files;                                           \
+	fi
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "config/stamp1 config/stamp2" || rm -f config/stamp1 config/stamp2
+rm -f libtool config.lt
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+Making distclean in c++
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test examples' ;; \
+	  *) list='' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in src
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++/src'
+test -z "libhdf5_cpp.la" || rm -f libhdf5_cpp.la
+list='libhdf5_cpp.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+if test -d ii_files; then                                       \
+	  rm -f -rf ii_files;                                           \
+	fi
+rm -f *.tab.c
+test -z "h5c++" || rm -f h5c++
+test . = "." || test -z "" || rm -f 
+test -z "h5c++ libhdf5.settings" || rm -f h5c++ libhdf5.settings
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++/src'
+Making distclean in test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++/test'
+list='testhdf5'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+if test -d ii_files; then                                       \
+	  rm -f -rf ii_files;                                           \
+	fi
+rm -f *.tab.c
+test -z "H5srcdir_str.h" || rm -f H5srcdir_str.h
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++/test'
+Making distclean in examples
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++/examples'
+test -z "create readdata writedata compound extend_ds chunks h5group h5tutr_cmprss h5tutr_crtatt h5tutr_crtdat h5tutr_crtgrpar h5tutr_crtgrp h5tutr_crtgrpd h5tutr_extend h5tutr_rdwt h5tutr_subset " || rm -f create readdata writedata compound extend_ds chunks h5group h5tutr_cmprss h5tutr_crtatt h5tutr_crtdat h5tutr_crtgrpar h5tutr_crtgrp h5tutr_crtgrpd h5tutr_extend h5tutr_rdwt h5tutr_subset 
+rm -rf .libs _libs
+test -z "*.raw *.meta *.o" || rm -f *.raw *.meta *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+test -z "run-c++-ex.sh testh5c++.sh" || rm -f run-c++-ex.sh testh5c++.sh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++/examples'
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/c++'
+Making distclean in fortran
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test testpar examples' ;; \
+	  *) list='' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in src
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/src'
+test -z "libhdf5_fortran.la" || rm -f libhdf5_fortran.la
+list='libhdf5_fortran.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+if test -n "" && test "X" != "Xo"; then \
+	  rm -f *.;                                         \
+	fi
+list='H5match_types H5fortran_detect H5test_kind'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+test -z "H5fortran_types.f90 H5f90i_gen.h H5fort_type_defines.h H5fortran_detect.f90" || rm -f H5fortran_types.f90 H5f90i_gen.h H5fort_type_defines.h H5fortran_detect.f90
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "h5fc" || rm -f h5fc
+test . = "." || test -z "" || rm -f 
+test -z "h5fc" || rm -f h5fc
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/src'
+Making distclean in test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/test'
+list='fortranlib_test fflush1 fflush2 fortranlib_test_1_8 '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+test -z "libh5test_fortran.la" || rm -f libh5test_fortran.la
+list='libh5test_fortran.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -f *.o
+test -z "*.tmp" || rm -f *.tmp
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/test'
+Making distclean in testpar
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/testpar'
+list='parallel_test'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog parf[12].h5
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/testpar'
+Making distclean in examples
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/examples'
+test -z "h5_crtdat h5_rdwt h5_crtatt h5_crtgrp h5_crtgrpar h5_crtgrpd h5_extend h5_subset h5_cmprss hyperslab selectele refobjexample refregexample mountexample compound  " || rm -f h5_crtdat h5_rdwt h5_crtatt h5_crtgrp h5_crtgrpar h5_crtgrpd h5_extend h5_subset h5_cmprss hyperslab selectele refobjexample refregexample mountexample compound  
+rm -rf .libs _libs
+test -z "*.raw *.meta *.o" || rm -f *.raw *.meta *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+test -z "run-fortran-ex.sh testh5fc.sh" || rm -f run-fortran-ex.sh testh5fc.sh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran/examples'
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/fortran'
+Making distclean in hl
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test tools c++ fortran examples' ;; \
+	  *) list='src test tools  ' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in src
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/src'
+test -z "libhdf5_hl.la" || rm -f libhdf5_hl.la
+list='libhdf5_hl.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/src'
+Making distclean in test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/test'
+list='test_lite test_image test_file_image test_table test_ds test_packet test_dset_opt'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog combine_tables[1-2].h5 test_ds[1-9].h5 test_ds10.h5 test_image[1-3].h5 file_img[1-2].h5 test_lite[1-4].h5 test_table.h5 test_packet_table.h5 test_packet_compress.h5 test_detach.h5 test_dectris.h5
+rm -f *.tab.c
+test -z "H5srcdir_str.h" || rm -f H5srcdir_str.h
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/test'
+Making distclean in tools
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='gif2h5' ;; \
+	  *) list='gif2h5' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in gif2h5
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools/gif2h5'
+list='gif2h5 h52gif'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+list='h52gifgentst'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5 *.gif
+rm -f *.tab.c
+test -z "h52giftest.sh" || rm -f h52giftest.sh
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools/gif2h5'
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/tools'
+Making distclean in c++
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test examples' ;; \
+	  *) list='src test' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in src
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++/src'
+test -z "libhdf5_hl_cpp.la" || rm -f libhdf5_hl_cpp.la
+list='libhdf5_hl_cpp.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++/src'
+Making distclean in test
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++/test'
+list='ptableTest'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++/test'
+Making distclean in examples
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++/examples'
+test -z "ptExampleFL " || rm -f ptExampleFL 
+rm -rf .libs _libs
+test -z "*.raw *.meta *.o" || rm -f *.raw *.meta *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+test -z "run-hlc++-ex.sh" || rm -f run-hlc++-ex.sh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++/examples'
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++'
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/c++'
+Making distclean in fortran
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='src test examples' ;; \
+	  *) list='src test' ;; \
+	esac; \
+	for subdir in $list; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done; \
+	if test "$dot_seen" = "no"; then \
+	  make  "$target-am" || exit 1; \
+	fi; test -z "$fail"
+Making distclean in src
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran/src'
+test -z "libhdf5hl_fortran.la" || rm -f libhdf5hl_fortran.la
+list='libhdf5hl_fortran.la'; \
+	locs=`for p in $list; do echo $p; done | \
+	      sed 's|^[^/]*$|.|; s|/[^/]*$||; s|$|/so_locations|' | \
+	      sort -u`; \
+	test -z "$locs" || { \
+	  echo rm -f ${locs}; \
+	  rm -f ${locs}; \
+	}
+rm -rf .libs _libs
+if test -n "" && test "X" != "Xo"; then \
+	  rm -f *.;                                         \
+	fi
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran/src'
+Making distclean in test
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran/test'
+list='tstds tstlite tstimage tsttable'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog dsetf[1-4].h5 f1img.h5 f1tab.h5 tstds.h5
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran/test'
+Making distclean in examples
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran/examples'
+test -z "exlite ex_ds1 " || rm -f exlite ex_ds1 
+rm -rf .libs _libs
+test -z "*.raw *.meta *.o" || rm -f *.raw *.meta *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+test -z "run-hlfortran-ex.sh" || rm -f run-hlfortran-ex.sh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran/examples'
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran'
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/fortran'
+Making distclean in examples
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/examples'
+test -z "ex_lite1 ex_lite2 ex_lite3 ptExampleFL ex_image1 ex_image2 ex_table_01 ex_table_02 ex_table_03 ex_table_04 ex_table_05 ex_table_06 ex_table_07 ex_table_08 ex_table_09 ex_table_10 ex_table_11 ex_table_12 ex_ds1 " || rm -f ex_lite1 ex_lite2 ex_lite3 ptExampleFL ex_image1 ex_image2 ex_table_01 ex_table_02 ex_table_03 ex_table_04 ex_table_05 ex_table_06 ex_table_07 ex_table_08 ex_table_09 ex_table_10 ex_table_11 ex_table_12 ex_ds1 
+rm -rf .libs _libs
+test -z "*.raw *.meta *.o" || rm -f *.raw *.meta *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog *.h5
+test -z "run-hlc-ex.sh" || rm -f run-hlc-ex.sh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl/examples'
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+rm -rf .libs _libs
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/hl'
+Making distclean in perform
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/perform'
+list='h5perf_serial'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='iopipe chunk overhead zip_perf perf_meta  perf'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "*.h5 *.raw *.dat x-gnuplot perftest.out" || rm -f *.h5 *.raw *.dat x-gnuplot perftest.out
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/perform'
+Making distclean in examples
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/examples'
+test -z "h5_write h5_read h5_extend_write h5_chunk_read h5_compound h5_crtgrpd h5_subset h5_cmprss h5_rdwt h5_crtgrpar h5_extend h5_crtatt h5_crtgrp h5_crtdat h5_group h5_select h5_attribute h5_mount h5_reference h5_drivers h5_ref2reg h5_extlink h5_elink_unix2win h5_shared_mesg " || rm -f h5_write h5_read h5_extend_write h5_chunk_read h5_compound h5_crtgrpd h5_subset h5_cmprss h5_rdwt h5_crtgrpar h5_extend h5_crtatt h5_crtgrp h5_crtdat h5_group h5_select h5_attribute h5_mount h5_reference h5_drivers h5_ref2reg h5_extlink h5_elink_unix2win h5_shared_mesg 
+rm -rf .libs _libs
+test -z "*.raw *.meta *.o" || rm -f *.raw *.meta *.o
+rm -f *.lo
+rm -f -rf *.chkexe *.chklog *.clog red blue u2w *.h5
+test -z "run-c-ex.sh testh5cc.sh" || rm -f run-c-ex.sh testh5cc.sh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12/examples'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/hdf5-1.8.12'
+#make clean_nc4
+make clean_netcdf
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src'
+rm -f netcdf-4.2/netcdf-4.2.config*
+rm -f netcdf-4.2/netcdf-4.2.install*
+rm -f netcdf-fortran-4.2/netcdf-fortran-4.2.config*
+rm -f netcdf-fortran-4.2/netcdf-fortran-4.2.install*
+make -C netcdf-4.2     clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='include h5_test libdispatch oc libsrc libsrc4 libdap2 libcdmr librpc liblib nctest nc_test ncgen3 ncgen ncdump nc_test4 ncdap_test man4 examples win32' ;; \
+	  *) list='include h5_test libdispatch  libsrc libsrc4    liblib nctest nc_test ncgen3 ncgen ncdump nc_test4  man4 examples win32' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in win32
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='NET' ;; \
+	  *) list='NET' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in NET
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='examples libsrc ncdump ncgen nctest nc_test ' ;; \
+	  *) list='examples libsrc ncdump ncgen nctest nc_test ' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in nc_test
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nc_test'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nc_test'
+Making clean in nctest
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nctest'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nctest'
+Making clean in ncgen
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncgen'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncgen'
+Making clean in ncdump
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncdump'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncdump'
+Making clean in libsrc
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/libsrc'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/libsrc'
+Making clean in examples
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/examples'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/examples'
+Making clean in .
+make[6]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+rm -rf .libs _libs
+rm -f *.lo
+make[6]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+Making clean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+Making clean in examples
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='C CDL' ;; \
+	  *) list='C CDL' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in CDL
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/CDL'
+test -z "simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc" || rm -f simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/CDL'
+Making clean in C
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/C'
+list='simple_xy_wr simple_xy_rd sfc_pres_temp_wr sfc_pres_temp_rd pres_temp_4D_wr pres_temp_4D_rd simple_nc4_wr simple_nc4_rd simple_xy_nc4_wr simple_xy_nc4_rd'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "sfc_pres_temp.nc simple_xy.nc pres_temp_4D.nc simple_nc4.nc simple_xy_nc4.nc" || rm -f sfc_pres_temp.nc simple_xy.nc pres_temp_4D.nc simple_nc4.nc simple_xy_nc4.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/C'
+Making clean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+Making clean in man4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='images' ;; \
+	  *) list='images' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in images
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4/images'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4/images'
+Making clean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+test -z "" || rm -f 
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+Making clean in nc_test4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test4'
+list='tst_dims tst_dims2 tst_dims3 tst_files tst_files4 tst_vars tst_varms tst_unlim_vars tst_converts tst_converts2 tst_grps tst_grps2 tst_compounds tst_compounds2 tst_compounds3 tst_opaques tst_strings tst_strings2 tst_interops tst_interops4 tst_interops5 tst_interops6 tst_enums tst_coords tst_coords2 tst_coords3 tst_vars3 tst_vars4 tst_chunks tst_chunks2 tst_utf8 tst_fills tst_fills2 tst_fillbug tst_xplatform tst_xplatform2 tst_h_atts2 tst_endian_fill tst_atts t_type cdm_sea_soundings tst_camrun tst_vl tst_atts1 tst_atts2 tst_vars2 tst_files5 tst_files6 tst_sync  tst_v2      '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "tst_mpi_parallel.bin cdm_sea_soundings.nc bm_chunking.nc bm_radar.nc bm_radar1.nc radar_3d_compression_test.txt radar_3d_compression.txt radar_2d_compression.txt radar_3d_chunking.txt tst_floats_1D.cdl floats_1D_3.nc floats_1D.cdl tst_*.nc tst_floats2_*.cdl tst_ints2_*.cdl tst_shorts2_*.cdl tst_elena_*.cdl tst_simple*.cdl tst_chunks.cdl pr_A1.* tauu_A1.* usi_01.* thetau_01.* tst_*.nc tst_*.h5" || rm -f tst_mpi_parallel.bin cdm_sea_soundings.nc bm_chunking.nc bm_radar.nc bm_radar1.nc radar_3d_compression_test.txt radar_3d_compression.txt radar_2d_compression.txt radar_3d_chunking.txt tst_floats_1D.cdl floats_1D_3.nc floats_1D.cdl tst_*.nc tst_floats2_*.cdl tst_ints2_*.cdl tst_shorts2_*.cdl tst_elena_*.cdl tst_simple*.cdl tst_chunks.cdl pr_A1.* tauu_A1.* usi_01.* thetau_01.* tst_*.nc tst_*.h5
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test4'
+Making clean in ncdump
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='cdl4 expected4' ;; \
+	  *) list='cdl4 expected4' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in expected4
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/expected4'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/expected4'
+Making clean in cdl4
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/cdl4'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/cdl4'
+Making clean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+list='ncdump nccopy'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='rewrite-scalar ctest ctest64 ncdump tst_utf8 tst_create_files tst_h_rdc0 tst_group_data tst_enum_data tst_opaque_data tst_string_data tst_vlen_data tst_comp tst_comp2 tst_nans tst_special_atts tst_unicode tst_fillbug tst_compress tst_chunking'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "test0.nc test1.cdl test1.nc test2.cdl ctest1.cdl ctest.c ctest64.c ctest0.nc ctest0_64.nc c1.cdl ctest1_64.cdl c0.nc small.nc small2.nc c0tmp.nc c1.ncml utf8.cdl utf8_64.cdl utf8.nc utf8_64.nc tmp.cdl tst_vlen_data.nc tst_utf8.nc tst_special_atts.nc tst_unicode.nc tst_solar_2.nc tst_string_data.nc tst_calendars.nc tst_nans.nc tst_opaque_data.nc tst_solar_cmp.nc tst_enum_data.nc tst_solar_1.nc tst_mslp_64.nc tst_mslp.nc tst_comp2.nc tst_ncml.nc tst_fillbug.nc tst_group_data.nc tst_small.nc tst_comp.nc tst_unicode.cdl tst_group_data.cdl tst_compounds2.cdl tst_comp.cdl tst_enum_data.cdl tst_small.cdl tst_times.cdl tst_solar_2.cdl tst_string_data.cdl tst_fillbug.cdl tst_opaque_data.cdl tst_compounds4.cdl tst_utf8.cdl tst_compounds3.cdl tst_special_atts.cdl tst_nans.cdl tst_format_att_64.cdl tst_vlen_data.cdl tst_solar_1.cdl tst_format_att.cdl tst_inflated.nc tmp_subset.cdl tst_inflated4.nc tst_deflated.nc tst_chunking.nc tmp*.nc tst_charfill.nc tmp_tst_charfill.cdl iter.* tst_nc_test_netcdf4_4_0.cdl results/*.nc results/*.dmp results/*.dmp2 tmp*.cdl" || rm -f test0.nc test1.cdl test1.nc test2.cdl ctest1.cdl ctest.c ctest64.c ctest0.nc ctest0_64.nc c1.cdl ctest1_64.cdl c0.nc small.nc small2.nc c0tmp.nc c1.ncml utf8.cdl utf8_64.cdl utf8.nc utf8_64.nc tmp.cdl tst_vlen_data.nc tst_utf8.nc tst_special_atts.nc tst_unicode.nc tst_solar_2.nc tst_string_data.nc tst_calendars.nc tst_nans.nc tst_opaque_data.nc tst_solar_cmp.nc tst_enum_data.nc tst_solar_1.nc tst_mslp_64.nc tst_mslp.nc tst_comp2.nc tst_ncml.nc tst_fillbug.nc tst_group_data.nc tst_small.nc tst_comp.nc tst_unicode.cdl tst_group_data.cdl tst_compounds2.cdl tst_comp.cdl tst_enum_data.cdl tst_small.cdl tst_times.cdl tst_solar_2.cdl tst_string_data.cdl tst_fillbug.cdl tst_opaque_data.cdl tst_compounds4.cdl tst_utf8.cdl tst_compounds3.cdl tst_special_atts.cdl tst_nans.cdl tst_format_att_64.cdl tst_vlen_data.cdl tst_solar_1.cdl tst_format_att.cdl tst_inflated.nc tmp_subset.cdl tst_inflated4.nc tst_deflated.nc tst_chunking.nc tmp*.nc tst_charfill.nc tmp_tst_charfill.cdl iter.* tst_nc_test_netcdf4_4_0.cdl results/*.nc results/*.dmp results/*.dmp2 tmp*.cdl
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+Making clean in ncgen
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen'
+list='ncgen'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "c0.nc c0_64.nc c0_4.nc c0_4c.nc ref_camrun.c" || rm -f c0.nc c0_64.nc c0_4.nc c0_4c.nc ref_camrun.c
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen'
+Making clean in ncgen3
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen3'
+list='ncgen3'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "c0.nc c0_64.nc c0_4.nc c0_4c.nc" || rm -f c0.nc c0_64.nc c0_4.nc c0_4c.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen3'
+Making clean in nc_test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test'
+list='t_nc tst_small nc_test tst_misc tst_norm tst_names tst_nofill tst_nofill2 tst_nofill3 tst_atts  '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "nc_test_classic.nc nc_test_64bit.nc nc_test_netcdf4.nc tst_*.nc t_nc.nc large_files.nc quick_large_files.nc " || rm -f nc_test_classic.nc nc_test_64bit.nc nc_test_netcdf4.nc tst_*.nc t_nc.nc large_files.nc quick_large_files.nc 
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test'
+Making clean in nctest
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nctest'
+list='nctest tst_rename'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "nctest_classic.nc nctest_64bit_offset.nc nctest_netcdf4.nc test2.nc temp.tmp tst_*.nc" || rm -f nctest_classic.nc nctest_64bit_offset.nc nctest_netcdf4.nc test2.nc temp.tmp tst_*.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nctest'
+Making clean in liblib
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/liblib'
+test -z "" || rm -f 
+test -z "libnetcdf.la" || rm -f libnetcdf.la
+list='libnetcdf.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/liblib'
+Making clean in libsrc4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc4'
+rm -rf .libs _libs
+test -z "libnetcdf4.la" || rm -f libnetcdf4.la
+list='libnetcdf4.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc4'
+Making clean in libsrc
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc'
+rm -rf .libs _libs
+test -z "libnetcdf3.la" || rm -f libnetcdf3.la
+list='libnetcdf3.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc'
+Making clean in libdispatch
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libdispatch'
+rm -rf .libs _libs
+test -z "libdispatch.la libnetcdf2.la " || rm -f libdispatch.la libnetcdf2.la 
+list='libdispatch.la libnetcdf2.la '; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libdispatch'
+Making clean in h5_test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/h5_test'
+list='tst_h_files tst_h_files2 tst_h_files4 tst_h_atts tst_h_atts3 tst_h_atts4 tst_h_vars tst_h_vars2 tst_h_vars3 tst_h_grps tst_h_compounds tst_h_compounds2 tst_h_wrt_cmp tst_h_rd_cmp tst_h_vl tst_h_opaques tst_h_strings tst_h_strings1 tst_h_strings2 tst_h_ints tst_h_dimscales tst_h_dimscales1 tst_h_dimscales2 tst_h_dimscales3 tst_h_enums tst_h_dimscales4  '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "tst_h_*.h5" || rm -f tst_h_*.h5
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/h5_test'
+Making clean in include
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/include'
+rm -rf .libs _libs
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/include'
+Making clean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+rm -rf .libs _libs
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+make -C netcdf-fortran-4.2 clean
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='f90 fortran nf_test man4 examples' ;; \
+	  *) list='f90 fortran nf_test man4 examples' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in examples
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "clean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='F77 F90' ;; \
+	  *) list='F77 F90' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo clean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making clean in F90
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F90'
+list='simple_xy_wr simple_xy_rd sfc_pres_temp_wr sfc_pres_temp_rd pres_temp_4D_wr pres_temp_4D_rd   '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc   " || rm -f simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc   
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F90'
+Making clean in F77
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F77'
+list='simple_xy_wr simple_xy_rd sfc_pres_temp_wr sfc_pres_temp_rd pres_temp_4D_wr pres_temp_4D_rd '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc simple_xy_nc4.nc" || rm -f simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc simple_xy_nc4.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F77'
+Making clean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+rm -rf .libs _libs
+rm -f *.lo
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+Making clean in man4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/man4'
+test -z "netcdf-f77.dvi netcdf-f77.pdf netcdf-f77.ps netcdf-f77.html \
+	  netcdf-f90.dvi netcdf-f90.pdf netcdf-f90.ps netcdf-f90.html" \
+	|| rm -rf netcdf-f77.dvi netcdf-f77.pdf netcdf-f77.ps netcdf-f77.html \
+	  netcdf-f90.dvi netcdf-f90.pdf netcdf-f90.ps netcdf-f90.html
+rm -rf .libs _libs
+rm -f 1.tmp
+rm -rf netcdf-f77.aux netcdf-f77.cp netcdf-f77.cps netcdf-f77.fn \
+	  netcdf-f77.ky netcdf-f77.kys netcdf-f77.log netcdf-f77.pg \
+	  netcdf-f77.pgs netcdf-f77.tmp netcdf-f77.toc netcdf-f77.tp \
+	  netcdf-f77.tps netcdf-f77.vr netcdf-f90.aux netcdf-f90.cp \
+	  netcdf-f90.cps netcdf-f90.fn netcdf-f90.ky netcdf-f90.kys \
+	  netcdf-f90.log netcdf-f90.pg netcdf-f90.pgs netcdf-f90.tmp \
+	  netcdf-f90.toc netcdf-f90.tp netcdf-f90.tps netcdf-f90.vr
+rm -f *.lo
+rm -f vti.tmp
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/man4'
+Making clean in nf_test
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/nf_test'
+list='nf_test          tst_f90'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "scratch.nc test.nc copy.nc fills.nc tst_*.nc ftst_*.nc f90tst_*.nc" || rm -f scratch.nc test.nc copy.nc fills.nc tst_*.nc ftst_*.nc f90tst_*.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/nf_test'
+Making clean in fortran
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/fortran'
+test -z "nfconfig1.inc netcdf.inc" || rm -f nfconfig1.inc netcdf.inc
+test -z "libnetcdff.la" || rm -f libnetcdff.la
+list='libnetcdff.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/fortran'
+Making clean in f90
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/f90'
+test -z "typesizes.mod netcdf.mod " || rm -f typesizes.mod netcdf.mod 
+rm -rf .libs _libs
+test -z "libnetcdff90.la" || rm -f libnetcdff90.la
+list='libnetcdff90.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/f90'
+Making clean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+rm -rf .libs _libs
+rm -f *.lo
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'
+make -C netcdf-4.2     distclean
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='include h5_test libdispatch oc libsrc libsrc4 libdap2 libcdmr librpc liblib nctest nc_test ncgen3 ncgen ncdump nc_test4 ncdap_test man4 examples win32' ;; \
+	  *) list='include h5_test libdispatch  libsrc libsrc4    liblib nctest nc_test ncgen3 ncgen ncdump nc_test4  man4 examples win32' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in win32
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='NET' ;; \
+	  *) list='NET' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in NET
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='examples libsrc ncdump ncgen nctest nc_test ' ;; \
+	  *) list='examples libsrc ncdump ncgen nctest nc_test ' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in nc_test
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nc_test'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nc_test'
+Making distclean in nctest
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nctest'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/nctest'
+Making distclean in ncgen
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncgen'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncgen'
+Making distclean in ncdump
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncdump'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/ncdump'
+Making distclean in libsrc
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/libsrc'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/libsrc'
+Making distclean in examples
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/examples'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET/examples'
+Making distclean in .
+make[5]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[5]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32/NET'
+Making distclean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/win32'
+Making distclean in examples
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='C CDL' ;; \
+	  *) list='C CDL' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in CDL
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/CDL'
+test -z "simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc" || rm -f simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/CDL'
+Making distclean in C
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/C'
+list='simple_xy_wr simple_xy_rd sfc_pres_temp_wr sfc_pres_temp_rd pres_temp_4D_wr pres_temp_4D_rd simple_nc4_wr simple_nc4_rd simple_xy_nc4_wr simple_xy_nc4_rd'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "sfc_pres_temp.nc simple_xy.nc pres_temp_4D.nc simple_nc4.nc simple_xy_nc4.nc" || rm -f sfc_pres_temp.nc simple_xy.nc pres_temp_4D.nc simple_nc4.nc simple_xy_nc4.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples/C'
+Making distclean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/examples'
+Making distclean in man4
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='images' ;; \
+	  *) list='images' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in images
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4/images'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4/images'
+Making distclean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+test -z "" || rm -f 
+rm -rf .libs _libs
+rm -f *.lo
+test -z "Doxyfile" || rm -f Doxyfile
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/man4'
+Making distclean in ncdap_test
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='testdata3 expected3 expected4 expectremote3 expectremote4' ;; \
+	  *) list='testdata3 expected3 expected4 expectremote3 expectremote4' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in expectremote4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expectremote4'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expectremote4'
+Making distclean in expectremote3
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expectremote3'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expectremote3'
+Making distclean in expected4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expected4'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expected4'
+Making distclean in expected3
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expected3'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/expected3'
+Making distclean in testdata3
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/testdata3'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test/testdata3'
+Making distclean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test'
+list=''; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "test_varm3 test_cvt3 results/*.dmp results/*.das results/*.dds datadds* t_dap3a test_cvt4 t_dap4" || rm -f test_varm3 test_cvt3 results/*.dmp results/*.das results/*.dds datadds* t_dap3a test_cvt4 t_dap4
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z ".dodsrc" || rm -f .dodsrc
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test'
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdap_test'
+Making distclean in nc_test4
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test4'
+list='tst_dims tst_dims2 tst_dims3 tst_files tst_files4 tst_vars tst_varms tst_unlim_vars tst_converts tst_converts2 tst_grps tst_grps2 tst_compounds tst_compounds2 tst_compounds3 tst_opaques tst_strings tst_strings2 tst_interops tst_interops4 tst_interops5 tst_interops6 tst_enums tst_coords tst_coords2 tst_coords3 tst_vars3 tst_vars4 tst_chunks tst_chunks2 tst_utf8 tst_fills tst_fills2 tst_fillbug tst_xplatform tst_xplatform2 tst_h_atts2 tst_endian_fill tst_atts t_type cdm_sea_soundings tst_camrun tst_vl tst_atts1 tst_atts2 tst_vars2 tst_files5 tst_files6 tst_sync  tst_v2      '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "tst_mpi_parallel.bin cdm_sea_soundings.nc bm_chunking.nc bm_radar.nc bm_radar1.nc radar_3d_compression_test.txt radar_3d_compression.txt radar_2d_compression.txt radar_3d_chunking.txt tst_floats_1D.cdl floats_1D_3.nc floats_1D.cdl tst_*.nc tst_floats2_*.cdl tst_ints2_*.cdl tst_shorts2_*.cdl tst_elena_*.cdl tst_simple*.cdl tst_chunks.cdl pr_A1.* tauu_A1.* usi_01.* thetau_01.* tst_*.nc tst_*.h5" || rm -f tst_mpi_parallel.bin cdm_sea_soundings.nc bm_chunking.nc bm_radar.nc bm_radar1.nc radar_3d_compression_test.txt radar_3d_compression.txt radar_2d_compression.txt radar_3d_chunking.txt tst_floats_1D.cdl floats_1D_3.nc floats_1D.cdl tst_*.nc tst_floats2_*.cdl tst_ints2_*.cdl tst_shorts2_*.cdl tst_elena_*.cdl tst_simple*.cdl tst_chunks.cdl pr_A1.* tauu_A1.* usi_01.* thetau_01.* tst_*.nc tst_*.h5
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test4'
+Making distclean in ncdump
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='cdl4 expected4' ;; \
+	  *) list='cdl4 expected4' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in expected4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/expected4'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/expected4'
+Making distclean in cdl4
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/cdl4'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump/cdl4'
+Making distclean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+list='ncdump nccopy'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+list='rewrite-scalar ctest ctest64 ncdump tst_utf8 tst_create_files tst_h_rdc0 tst_group_data tst_enum_data tst_opaque_data tst_string_data tst_vlen_data tst_comp tst_comp2 tst_nans tst_special_atts tst_unicode tst_fillbug tst_compress tst_chunking'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "test0.nc test1.cdl test1.nc test2.cdl ctest1.cdl ctest.c ctest64.c ctest0.nc ctest0_64.nc c1.cdl ctest1_64.cdl c0.nc small.nc small2.nc c0tmp.nc c1.ncml utf8.cdl utf8_64.cdl utf8.nc utf8_64.nc tmp.cdl tst_vlen_data.nc tst_utf8.nc tst_special_atts.nc tst_unicode.nc tst_solar_2.nc tst_string_data.nc tst_calendars.nc tst_nans.nc tst_opaque_data.nc tst_solar_cmp.nc tst_enum_data.nc tst_solar_1.nc tst_mslp_64.nc tst_mslp.nc tst_comp2.nc tst_ncml.nc tst_fillbug.nc tst_group_data.nc tst_small.nc tst_comp.nc tst_unicode.cdl tst_group_data.cdl tst_compounds2.cdl tst_comp.cdl tst_enum_data.cdl tst_small.cdl tst_times.cdl tst_solar_2.cdl tst_string_data.cdl tst_fillbug.cdl tst_opaque_data.cdl tst_compounds4.cdl tst_utf8.cdl tst_compounds3.cdl tst_special_atts.cdl tst_nans.cdl tst_format_att_64.cdl tst_vlen_data.cdl tst_solar_1.cdl tst_format_att.cdl tst_inflated.nc tmp_subset.cdl tst_inflated4.nc tst_deflated.nc tst_chunking.nc tmp*.nc tst_charfill.nc tmp_tst_charfill.cdl iter.* tst_nc_test_netcdf4_4_0.cdl results/*.nc results/*.dmp results/*.dmp2 tmp*.cdl" || rm -f test0.nc test1.cdl test1.nc test2.cdl ctest1.cdl ctest.c ctest64.c ctest0.nc ctest0_64.nc c1.cdl ctest1_64.cdl c0.nc small.nc small2.nc c0tmp.nc c1.ncml utf8.cdl utf8_64.cdl utf8.nc utf8_64.nc tmp.cdl tst_vlen_data.nc tst_utf8.nc tst_special_atts.nc tst_unicode.nc tst_solar_2.nc tst_string_data.nc tst_calendars.nc tst_nans.nc tst_opaque_data.nc tst_solar_cmp.nc tst_enum_data.nc tst_solar_1.nc tst_mslp_64.nc tst_mslp.nc tst_comp2.nc tst_ncml.nc tst_fillbug.nc tst_group_data.nc tst_small.nc tst_comp.nc tst_unicode.cdl tst_group_data.cdl tst_compounds2.cdl tst_comp.cdl tst_enum_data.cdl tst_small.cdl tst_times.cdl tst_solar_2.cdl tst_string_data.cdl tst_fillbug.cdl tst_opaque_data.cdl tst_compounds4.cdl tst_utf8.cdl tst_compounds3.cdl tst_special_atts.cdl tst_nans.cdl tst_format_att_64.cdl tst_vlen_data.cdl tst_solar_1.cdl tst_format_att.cdl tst_inflated.nc tmp_subset.cdl tst_inflated4.nc tst_deflated.nc tst_chunking.nc tmp*.nc tst_charfill.nc tmp_tst_charfill.cdl iter.* tst_nc_test_netcdf4_4_0.cdl results/*.nc results/*.dmp results/*.dmp2 tmp*.cdl
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncdump'
+Making distclean in ncgen
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen'
+list='ncgen'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "c0.nc c0_64.nc c0_4.nc c0_4c.nc ref_camrun.c" || rm -f c0.nc c0_64.nc c0_4.nc c0_4c.nc ref_camrun.c
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen'
+Making distclean in ncgen3
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen3'
+list='ncgen3'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "c0.nc c0_64.nc c0_4.nc c0_4c.nc" || rm -f c0.nc c0_64.nc c0_4.nc c0_4c.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/ncgen3'
+Making distclean in nc_test
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test'
+list='t_nc tst_small nc_test tst_misc tst_norm tst_names tst_nofill tst_nofill2 tst_nofill3 tst_atts  '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "nc_test_classic.nc nc_test_64bit.nc nc_test_netcdf4.nc tst_*.nc t_nc.nc large_files.nc quick_large_files.nc " || rm -f nc_test_classic.nc nc_test_64bit.nc nc_test_netcdf4.nc tst_*.nc t_nc.nc large_files.nc quick_large_files.nc 
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nc_test'
+Making distclean in nctest
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nctest'
+list='nctest tst_rename'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "nctest_classic.nc nctest_64bit_offset.nc nctest_netcdf4.nc test2.nc temp.tmp tst_*.nc" || rm -f nctest_classic.nc nctest_64bit_offset.nc nctest_netcdf4.nc test2.nc temp.tmp tst_*.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/nctest'
+Making distclean in liblib
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/liblib'
+test -z "" || rm -f 
+test -z "libnetcdf.la" || rm -f libnetcdf.la
+list='libnetcdf.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/liblib'
+Making distclean in librpc
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/librpc'
+test -z "" || rm -f 
+rm -rf .libs _libs
+test -z "" || rm -f 
+list=''; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/librpc'
+Making distclean in libcdmr
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libcdmr'
+test -z "" || rm -f 
+rm -rf .libs _libs
+test -z "" || rm -f 
+list=''; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libcdmr'
+Making distclean in libdap2
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libdap2'
+test -z "" || rm -f 
+rm -rf .libs _libs
+test -z "" || rm -f 
+list=''; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libdap2'
+Making distclean in libsrc4
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc4'
+rm -rf .libs _libs
+test -z "libnetcdf4.la" || rm -f libnetcdf4.la
+list='libnetcdf4.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc4'
+Making distclean in libsrc
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc'
+rm -rf .libs _libs
+test -z "libnetcdf3.la" || rm -f libnetcdf3.la
+list='libnetcdf3.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libsrc'
+Making distclean in oc
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/oc'
+rm -rf .libs _libs
+test -z "" || rm -f 
+list=''; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/oc'
+Making distclean in libdispatch
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libdispatch'
+rm -rf .libs _libs
+test -z "libdispatch.la libnetcdf2.la " || rm -f libdispatch.la libnetcdf2.la 
+list='libdispatch.la libnetcdf2.la '; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/libdispatch'
+Making distclean in h5_test
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/h5_test'
+list='tst_h_files tst_h_files2 tst_h_files4 tst_h_atts tst_h_atts3 tst_h_atts4 tst_h_vars tst_h_vars2 tst_h_vars3 tst_h_grps tst_h_compounds tst_h_compounds2 tst_h_wrt_cmp tst_h_rd_cmp tst_h_vl tst_h_opaques tst_h_strings tst_h_strings1 tst_h_strings2 tst_h_ints tst_h_dimscales tst_h_dimscales1 tst_h_dimscales2 tst_h_dimscales3 tst_h_enums tst_h_dimscales4  '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "tst_h_*.h5" || rm -f tst_h_*.h5
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/h5_test'
+Making distclean in include
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/include'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2/include'
+Making distclean in .
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "nc-config netcdf.pc" || rm -f nc-config netcdf.pc
+test . = "." || test -z "" || rm -f 
+test -z "VERSION comps.txt test_prog" || rm -f VERSION comps.txt test_prog
+rm -f config.h stamp-h1
+rm -f libtool config.lt
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-4.2'
+make -C netcdf-fortran-4.2 distclean
+make[2]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='f90 fortran nf_test man4 examples' ;; \
+	  *) list='f90 fortran nf_test man4 examples' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in examples
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+fail= failcom='exit 1'; \
+	for f in x $MAKEFLAGS; do \
+	  case $f in \
+	    *=* | --[!k]*);; \
+	    *k*) failcom='fail=yes';; \
+	  esac; \
+	done; \
+	dot_seen=no; \
+	case "distclean-recursive" in \
+	  distclean-* | maintainer-clean-*) list='F77 F90' ;; \
+	  *) list='F77 F90' ;; \
+	esac; \
+	rev=''; for subdir in $list; do \
+	  if test "$subdir" = "."; then :; else \
+	    rev="$subdir $rev"; \
+	  fi; \
+	done; \
+	rev="$rev ."; \
+	target=`echo distclean-recursive | sed s/-recursive//`; \
+	for subdir in $rev; do \
+	  echo "Making $target in $subdir"; \
+	  if test "$subdir" = "."; then \
+	    local_target="$target-am"; \
+	  else \
+	    local_target="$target"; \
+	  fi; \
+	  (CDPATH="${ZSH_VERSION+.}:" && cd $subdir && make  $local_target) \
+	  || eval $failcom; \
+	done && test -z "$fail"
+Making distclean in F90
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F90'
+list='simple_xy_wr simple_xy_rd sfc_pres_temp_wr sfc_pres_temp_rd pres_temp_4D_wr pres_temp_4D_rd   '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc   " || rm -f simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc   
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F90'
+Making distclean in F77
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F77'
+list='simple_xy_wr simple_xy_rd sfc_pres_temp_wr sfc_pres_temp_rd pres_temp_4D_wr pres_temp_4D_rd '; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc simple_xy_nc4.nc" || rm -f simple_xy.nc sfc_pres_temp.nc pres_temp_4D.nc simple_xy_nc4.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples/F77'
+Making distclean in .
+make[4]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/examples'
+Making distclean in man4
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/man4'
+test -z "netcdf-f77.dvi netcdf-f77.pdf netcdf-f77.ps netcdf-f77.html \
+	  netcdf-f90.dvi netcdf-f90.pdf netcdf-f90.ps netcdf-f90.html" \
+	|| rm -rf netcdf-f77.dvi netcdf-f77.pdf netcdf-f77.ps netcdf-f77.html \
+	  netcdf-f90.dvi netcdf-f90.pdf netcdf-f90.ps netcdf-f90.html
+rm -rf .libs _libs
+rm -f 1.tmp
+rm -rf netcdf-f77.aux netcdf-f77.cp netcdf-f77.cps netcdf-f77.fn \
+	  netcdf-f77.ky netcdf-f77.kys netcdf-f77.log netcdf-f77.pg \
+	  netcdf-f77.pgs netcdf-f77.tmp netcdf-f77.toc netcdf-f77.tp \
+	  netcdf-f77.tps netcdf-f77.vr netcdf-f90.aux netcdf-f90.cp \
+	  netcdf-f90.cps netcdf-f90.fn netcdf-f90.ky netcdf-f90.kys \
+	  netcdf-f90.log netcdf-f90.pg netcdf-f90.pgs netcdf-f90.tmp \
+	  netcdf-f90.toc netcdf-f90.tp netcdf-f90.tps netcdf-f90.vr
+rm -f *.lo
+rm -f vti.tmp
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/man4'
+Making distclean in nf_test
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/nf_test'
+list='nf_test          tst_f90'; test -n "$list" || exit 0; \
+	echo " rm -f" $list; \
+	rm -f $list || exit $?; \
+	test -n "" || exit 0; \
+	list=`for p in $list; do echo "$p"; done | sed 's/$//'`; \
+	echo " rm -f" $list; \
+	rm -f $list
+test -z "scratch.nc test.nc copy.nc fills.nc tst_*.nc ftst_*.nc f90tst_*.nc" || rm -f scratch.nc test.nc copy.nc fills.nc tst_*.nc ftst_*.nc f90tst_*.nc
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/nf_test'
+Making distclean in fortran
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/fortran'
+test -z "nfconfig1.inc netcdf.inc" || rm -f nfconfig1.inc netcdf.inc
+test -z "libnetcdff.la" || rm -f libnetcdff.la
+list='libnetcdff.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "nfconfig.inc " || rm -f nfconfig.inc 
+rm -f nfconfig1.inc stamp-h2
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/fortran'
+Making distclean in f90
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/f90'
+test -z "typesizes.mod netcdf.mod " || rm -f typesizes.mod netcdf.mod 
+rm -rf .libs _libs
+test -z "libnetcdff90.la" || rm -f libnetcdff90.la
+list='libnetcdff90.la'; for p in $list; do \
+	  dir="`echo $p | sed -e 's|/[^/]*$||'`"; \
+	  test "$dir" != "$p" || dir=.; \
+	  echo "rm -f \"${dir}/so_locations\""; \
+	  rm -f "${dir}/so_locations"; \
+	done
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2/f90'
+Making distclean in .
+make[3]: 正在进入目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "nf-config netcdf-fortran.pc" || rm -f nf-config netcdf-fortran.pc
+test . = "." || test -z "" || rm -f 
+test -z "VERSION comps.txt test_prog" || rm -f VERSION comps.txt test_prog
+rm -f config.h stamp-h1
+rm -f libtool config.lt
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[3]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[2]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src/netcdf-fortran-4.2'
+if [ ! -f no == "yes" ] ; then                                \
+	   @make clean_zlib;                                               \
+	   @make clean_jasper;                                               \
+	   @make clean_libpng;                                               \
+	   @make clean_hdf5;                                               \
+	   @make -C zlib-1.2.6 distclean;                                \
+	   @make -C hdf5-1.8.12 distclean;                                \
+	fi
+make[1]:正在离开目录 `/home/metman/git-projects/WRF_Libraries/src'

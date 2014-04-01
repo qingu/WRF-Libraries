@@ -1,0 +1,239 @@
+Name **pmi_port %s is defined in src/mpi/errhan/errnames.txt:1449 but never used
+Name **drconvnotsupported is defined in src/mpi/errhan/errnames.txt:1579 but never used
+Name **finalized is defined in src/mpi/errhan/errnames.txt:8 but never used
+Name **pmi_putnodeattr is defined in src/mpi/errhan/errnames.txt:1440 but never used
+Name **pmi_version is defined in src/mpi/errhan/errnames.txt:1419 but never used
+Name **shmget %d is defined in src/mpi/errhan/errnames.txt:556 but never used
+Name **setenv is defined in src/mpi/errhan/errnames.txt:711 but never used
+Name **pmi_nameservpublish %s is defined in src/mpi/errhan/errnames.txt:1445 but never used
+Name **pmi_finalize is defined in src/mpi/errhan/errnames.txt:1421 but never used
+Name **msgrcv is defined in src/mpi/errhan/errnames.txt:572 but never used
+Name **shmconnect_getmem is defined in src/mpi/errhan/errnames.txt:598 but never used
+Name **msgget is defined in src/mpi/errhan/errnames.txt:568 but never used
+Name **post_connect %s is defined in src/mpi/errhan/errnames.txt:603 but never used
+Name **mq_receive is defined in src/mpi/errhan/errnames.txt:586 but never used
+Name **bad_cmd is defined in src/mpi/errhan/errnames.txt:1410 but never used
+Name **encode_buffer %d is defined in src/mpi/errhan/errnames.txt:789 but never used
+Name **ibv_destroy_comp_channel %s is defined in src/mpi/errhan/errnames.txt:738 but never used
+Name **fdopen is defined in src/mpi/errhan/errnames.txt:802 but never used
+Name **post_connect is defined in src/mpi/errhan/errnames.txt:594 but never used
+Name **commstack is defined in src/mpi/errhan/errnames.txt:417 but never used
+Name **attach_to_mem is defined in src/mpi/errhan/errnames.txt:588 but never used
+Name **msgsnd %d is defined in src/mpi/errhan/errnames.txt:571 but never used
+Name **thread_create is defined in src/mpi/errhan/errnames.txt:423 but never used
+Name **argstr_shmq is defined in src/mpi/errhan/errnames.txt:642 but never used
+Name **shmsize is defined in src/mpi/errhan/errnames.txt:684 but never used
+Name **msgrcv %d is defined in src/mpi/errhan/errnames.txt:573 but never used
+Name **ibv_poll_cq %d is defined in src/mpi/errhan/errnames.txt:772 but never used
+Name **shmat %d is defined in src/mpi/errhan/errnames.txt:554 but never used
+Name **encode_buffer is defined in src/mpi/errhan/errnames.txt:788 but never used
+Name **ibv_req_notify_cq %s is defined in src/mpi/errhan/errnames.txt:766 but never used
+Name **shm_unlink is defined in src/mpi/errhan/errnames.txt:607 but never used
+Name **business_card is defined in src/mpi/errhan/errnames.txt:545 but never used
+Name **mktemp_s is defined in src/mpi/errhan/errnames.txt:798 but never used
+Name **ftok %s %d %d is defined in src/mpi/errhan/errnames.txt:612 but never used
+Name **pmi_kvs_destroy is defined in src/pmi/errnames.txt:28 but never used
+Name **ibv_create_ah is defined in src/mpi/errhan/errnames.txt:767 but never used
+Name **bad_keyval is defined in src/mpi/errhan/errnames.txt:1409 but never used
+Name **fdopen %s is defined in src/mpi/errhan/errnames.txt:803 but never used
+Name **ibv_alloc_pd is defined in src/mpi/errhan/errnames.txt:733 but never used
+Name **pthread_create is defined in src/mpi/errhan/errnames.txt:776 but never used
+Name **mqshm_send is defined in src/mpi/errhan/errnames.txt:605 but never used
+Name **finalize_progress_finalize is defined in src/mpi/errhan/errnames.txt:673 but never used
+Name **shmhost is defined in src/mpi/errhan/errnames.txt:682 but never used
+Name **mpi_file_call_errhandler %F %d is defined in src/mpi/errhan/errnames.txt:1224 but never used
+Name **progress_handle_sock_op is defined in src/mpi/errhan/errnames.txt:595 but never used
+Name **ftb_publish is defined in src/mpid/ch3/util/ftb/errnames.txt:6 but never used
+Name **unableToLoadDLLsym is defined in src/mpi/errhan/errnames.txt:175 but never used
+Name **shmq_index %d %d is defined in src/mpi/errhan/errnames.txt:631 but never used
+Name **dev|vcrt_get_ptr %s is defined in src/mpi/errhan/errnames.txt:439 but never used
+Name **ibv_get_device_list is defined in src/mpi/errhan/errnames.txt:747 but never used
+Name **FindWindowEx is defined in src/mpi/errhan/errnames.txt:578 but never used
+Name **pmi_get_clique_ranks %d is defined in src/pmi/errnames.txt:40 but never used
+Name **mktemp_s %s is defined in src/mpi/errhan/errnames.txt:799 but never used
+Name **ftok is defined in src/mpi/errhan/errnames.txt:611 but never used
+Name **sigusr1 is defined in src/mpi/errhan/errnames.txt:857 but never used
+Name **ibv_post_recv is defined in src/mpi/errhan/errnames.txt:763 but never used
+Name **inet_ntoa is defined in src/mpi/errhan/errnames.txt:790 but never used
+Name **pmi_get_clique_size is defined in src/pmi/errnames.txt:37 but never used
+Name **ibv_reg_mr is defined in src/mpi/errhan/errnames.txt:751 but never used
+Name **ibv_dereg_mr is defined in src/mpi/errhan/errnames.txt:753 but never used
+Name **ibv_modify_srq is defined in src/mpi/errhan/errnames.txt:745 but never used
+Name **winRMArequest is defined in src/mpi/errhan/errnames.txt:709 but never used
+Name **pmi_version %s %s %s %s is defined in src/mpi/errhan/errnames.txt:1420 but never used
+Name **ibv_destroy_cq is defined in src/mpi/errhan/errnames.txt:741 but never used
+Name **ptlleappend %s is defined in src/mpid/ch3/channels/nemesis/netmod/portals4/errnames.txt:18 but never used
+Name **pmi_kvsput is defined in src/mpi/errhan/errnames.txt:1429 but never used
+Name **nextbootmsg is defined in src/mpi/errhan/errnames.txt:574 but never used
+Name **pmi_kvsfence %s is defined in src/mpi/errhan/errnames.txt:1432 but never used
+Name **bootqmsg is defined in src/mpi/errhan/errnames.txt:617 but never used
+Name **fopen %s is defined in src/mpi/errhan/errnames.txt:807 but never used
+Name **CreateThread is defined in src/mpi/errhan/errnames.txt:576 but never used
+Name **ibv_post_send %s is defined in src/mpi/errhan/errnames.txt:770 but never used
+Name **winwait is defined in src/mpi/errhan/errnames.txt:575 but never used
+Name **mq_open %d is defined in src/mpi/errhan/errnames.txt:581 but never used
+Name **readv is defined in src/mpi/errhan/errnames.txt:823 but never used
+Name **iov_offset is defined in src/mpi/errhan/errnames.txt:624 but never used
+Name **shmgetmem is defined in src/mpi/errhan/errnames.txt:675 but never used
+Name **shmwrite is defined in src/mpi/errhan/errnames.txt:599 but never used
+Name **ftruncate %s %d %d is defined in src/mpi/errhan/errnames.txt:681 but never used
+Name **decode_buffer is defined in src/mpi/errhan/errnames.txt:786 but never used
+Name **shmq_index is defined in src/mpi/errhan/errnames.txt:630 but never used
+Name **ibv_query_device is defined in src/mpi/errhan/errnames.txt:759 but never used
+Name **pmi_kvsget_notfound %s is defined in src/mpi/errhan/errnames.txt:1437 but never used
+Name **progress_init is defined in src/mpi/errhan/errnames.txt:661 but never used
+Name **ibv_destroy_qp is defined in src/mpi/errhan/errnames.txt:757 but never used
+Name **node_root_rank is defined in src/mpi/errhan/errnames.txt:412 but never used
+Name **pmi_kvs_get_key_length_max is defined in src/pmi/errnames.txt:24 but never used
+Name **shmat is defined in src/mpi/errhan/errnames.txt:553 but never used
+Name **pthread_cancel %s is defined in src/mpi/errhan/errnames.txt:779 but never used
+Name **pthread_cancel is defined in src/mpi/errhan/errnames.txt:778 but never used
+Name **ibv_create_cq is defined in src/mpi/errhan/errnames.txt:739 but never used
+Name **pmi_jobdisconnect is defined in src/mpi/errhan/errnames.txt:1427 but never used
+Name **vc_state is defined in src/mpi/errhan/errnames.txt:634 but never used
+Name **ssmwrite is defined in src/mpi/errhan/errnames.txt:600 but never used
+Name **ibv_reg_mr %d is defined in src/mpi/errhan/errnames.txt:752 but never used
+Name **mq_close is defined in src/mpi/errhan/errnames.txt:582 but never used
+Name **shmhost %s %s is defined in src/mpi/errhan/errnames.txt:683 but never used
+Name **mq_send %d is defined in src/mpi/errhan/errnames.txt:585 but never used
+Name **attach_to_mem %d is defined in src/mpi/errhan/errnames.txt:602 but never used
+Name **unableToLoadDLL %s %s is defined in src/mpi/errhan/errnames.txt:173 but never used
+Name **ibv_create_srq %s is defined in src/mpi/errhan/errnames.txt:744 but never used
+Name **poll error is defined in src/mpi/errhan/errnames.txt:1575 but never used
+Name **ibv_create_cq %s is defined in src/mpi/errhan/errnames.txt:740 but never used
+Name **opnotallowed %d is defined in src/mpi/errhan/errnames.txt:217 but never used
+Name **decode_buffer %d is defined in src/mpi/errhan/errnames.txt:787 but never used
+Name **boot_recv is defined in src/mpi/errhan/errnames.txt:590 but never used
+Name **tmpnam is defined in src/mpi/errhan/errnames.txt:804 but never used
+Name **ibv_modify_srq %d is defined in src/mpi/errhan/errnames.txt:746 but never used
+Name **ibv_post_srq_recv is defined in src/mpi/errhan/errnames.txt:773 but never used
+Name **ibv_req_notify_cq is defined in src/mpi/errhan/errnames.txt:765 but never used
+Name **pmi_invalid_clique_size is defined in src/pmi/errnames.txt:41 but never used
+Name **ibv_poll_cq is defined in src/mpi/errhan/errnames.txt:771 but never used
+Name **boot_send is defined in src/mpi/errhan/errnames.txt:591 but never used
+Name **tmpnam %s is defined in src/mpi/errhan/errnames.txt:805 but never used
+Name **pmi_kvs_get_key_length_max %d is defined in src/pmi/errnames.txt:25 but never used
+Name **CreateThread %d is defined in src/mpi/errhan/errnames.txt:577 but never used
+Name **pmi_kvsput %s is defined in src/mpi/errhan/errnames.txt:1430 but never used
+Name **pthread_create %d is defined in src/mpi/errhan/errnames.txt:777 but never used
+Name **pmi_initack %s is defined in src/mpi/errhan/errnames.txt:1416 but never used
+Name **OpenProcess is defined in src/mpi/errhan/errnames.txt:547 but never used
+Name **ibv_create_srq is defined in src/mpi/errhan/errnames.txt:743 but never used
+Name **OpenProcess %d %d is defined in src/mpi/errhan/errnames.txt:548 but never used
+Name **inet_ntoa %s %d is defined in src/mpi/errhan/errnames.txt:791 but never used
+Name **shmctl %d %d is defined in src/mpi/errhan/errnames.txt:610 but never used
+Name **ibv_post_send %d is defined in src/mpi/errhan/errnames.txt:775 but never used
+Name **pmi_get_clique_ranks is defined in src/pmi/errnames.txt:39 but never used
+Name **pmi_getjobattr %s is defined in src/mpi/errhan/errnames.txt:1443 but never used
+Name **ibv_modify_qp %s is defined in src/mpi/errhan/errnames.txt:762 but never used
+Name **pmi_putnodeattr %s is defined in src/mpi/errhan/errnames.txt:1441 but never used
+Name **ssmwritev is defined in src/mpi/errhan/errnames.txt:601 but never used
+Name **MPIDI_CH3I_SHM_Attach_to_mem %d is defined in src/mpi/errhan/errnames.txt:543 but never used
+Name **mq_close %d is defined in src/mpi/errhan/errnames.txt:583 but never used
+Name **shmget is defined in src/mpi/errhan/errnames.txt:555 but never used
+Name **finalize_release_mem is defined in src/mpi/errhan/errnames.txt:674 but never used
+Name **internrc is defined in src/mpi/errhan/errnames.txt:272 but never used
+Name **pmi_get_clique_size %d is defined in src/pmi/errnames.txt:38 but never used
+Name **connect_to_pm %s %d is defined in src/mpi/errhan/errnames.txt:1447 but never used
+Name **fopen_s is defined in src/mpi/errhan/errnames.txt:808 but never used
+Name **ibv_destroy_qp %s is defined in src/mpi/errhan/errnames.txt:758 but never used
+Name **init is defined in src/mpi/errhan/errnames.txt:444 but never used
+Name **fopen_s %s is defined in src/mpi/errhan/errnames.txt:809 but never used
+Name **ibv_get_device_list %p is defined in src/mpi/errhan/errnames.txt:748 but never used
+Name **pkt_ptr %p %p is defined in src/mpi/errhan/errnames.txt:615 but never used
+Name **ptlleappend is defined in src/mpid/ch3/channels/nemesis/netmod/portals4/errnames.txt:17 but never used
+Name **pmi_finalize %s is defined in src/mpi/errhan/errnames.txt:1422 but never used
+Name **unableToLoadDLL is defined in src/mpi/errhan/errnames.txt:171 but never used
+Name **vc_state %d is defined in src/mpi/errhan/errnames.txt:635 but never used
+Name **pmi_getnodeattr %s is defined in src/mpi/errhan/errnames.txt:1439 but never used
+Name **boot_detach is defined in src/mpi/errhan/errnames.txt:589 but never used
+Name **progress_test is defined in src/mpi/errhan/errnames.txt:627 but never used
+Name **argstr_shmpid is defined in src/mpi/errhan/errnames.txt:643 but never used
+Name **ibv_alloc_pd %s is defined in src/mpi/errhan/errnames.txt:734 but never used
+Name **pmi_fullinit %s is defined in src/mpi/errhan/errnames.txt:1418 but never used
+Name **ptlleunlink is defined in src/mpid/ch3/channels/nemesis/netmod/portals4/errnames.txt:19 but never used
+Name **business_card %s is defined in src/mpi/errhan/errnames.txt:546 but never used
+Name **ibv_destroy_comp_channel is defined in src/mpi/errhan/errnames.txt:737 but never used
+Name **pmi_port is defined in src/mpi/errhan/errnames.txt:1448 but never used
+Name **shmctl is defined in src/mpi/errhan/errnames.txt:609 but never used
+Name **pmi_getnodeattr is defined in src/mpi/errhan/errnames.txt:1438 but never used
+Name **pmi_jobconnect %s is defined in src/mpi/errhan/errnames.txt:1426 but never used
+Name **mq_send is defined in src/mpi/errhan/errnames.txt:584 but never used
+Name **val_too_long is defined in src/mpi/errhan/errnames.txt:1413 but never used
+Name **MPIDI_CH3I_SHM_Attach_to_mem is defined in src/mpi/errhan/errnames.txt:542 but never used
+Name **init_description is defined in src/mpi/errhan/errnames.txt:656 but never used
+Name **mqp_failure is defined in src/mpi/errhan/errnames.txt:613 but never used
+Name **ftb_disconnect is defined in src/mpid/ch3/util/ftb/errnames.txt:5 but never used
+Name **mpi_file_call_errhandler is defined in src/mpi/errhan/errnames.txt:1223 but never used
+Name **argstr_shmhost is defined in src/mpi/errhan/errnames.txt:641 but never used
+Name **ibv_dereg_mr %s is defined in src/mpi/errhan/errnames.txt:754 but never used
+Name **pmi_kvsget_notfound is defined in src/mpi/errhan/errnames.txt:1436 but never used
+Name **mq_open is defined in src/mpi/errhan/errnames.txt:580 but never used
+Name **unableToLoadDLLsym %s %s is defined in src/mpi/errhan/errnames.txt:177 but never used
+Name **iov_offset %d %d is defined in src/mpi/errhan/errnames.txt:625 but never used
+Name **shm_read_progress is defined in src/mpi/errhan/errnames.txt:597 but never used
+Name **FindWindowEx %d is defined in src/mpi/errhan/errnames.txt:579 but never used
+Name **shm_op %d is defined in src/mpi/errhan/errnames.txt:629 but never used
+Name **thread_create %s is defined in src/mpi/errhan/errnames.txt:424 but never used
+Name **CreateFileMapping is defined in src/mpi/errhan/errnames.txt:551 but never used
+Name **ibv_post_send is defined in src/mpi/errhan/errnames.txt:769 but never used
+Name **ibv_create_comp_channel is defined in src/mpi/errhan/errnames.txt:735 but never used
+Name **pmi_jobconnect is defined in src/mpi/errhan/errnames.txt:1425 but never used
+Name **nulledge is defined in src/mpi/errhan/errnames.txt:56 but never used
+Name **ibv_create_qp %s is defined in src/mpi/errhan/errnames.txt:756 but never used
+Name **ex_init is defined in src/mpi/errhan/errnames.txt:453 but never used
+Name **ibv_open_device %s is defined in src/mpi/errhan/errnames.txt:750 but never used
+Name **nulledge %d %d is defined in src/mpi/errhan/errnames.txt:57 but never used
+Name **ibv_destroy_cq %s is defined in src/mpi/errhan/errnames.txt:742 but never used
+Name **finalize_boot is defined in src/mpi/errhan/errnames.txt:592 but never used
+Name **msgctl %d is defined in src/mpi/errhan/errnames.txt:567 but never used
+Name **bootqmsg %d is defined in src/mpi/errhan/errnames.txt:618 but never used
+Name **pmi_jobdisconnect %s is defined in src/mpi/errhan/errnames.txt:1428 but never used
+Name **test_sock_wait is defined in src/mpi/errhan/errnames.txt:662 but never used
+Name **dev|pg_finalize is defined in src/mpi/errhan/errnames.txt:431 but never used
+Name **strncpy is defined in src/mpi/errhan/errnames.txt:633 but never used
+Name **ptlleunlink %s is defined in src/mpid/ch3/channels/nemesis/netmod/portals4/errnames.txt:20 but never used
+Name **pkt_ptr is defined in src/mpi/errhan/errnames.txt:614 but never used
+Name **rmareqop is defined in src/mpi/errhan/errnames.txt:384 but never used
+Name **ftruncate is defined in src/mpi/errhan/errnames.txt:680 but never used
+Name **ibv_modify_qp is defined in src/mpi/errhan/errnames.txt:761 but never used
+Name **pmi_getjobattr is defined in src/mpi/errhan/errnames.txt:1442 but never used
+Name **fopen is defined in src/mpi/errhan/errnames.txt:806 but never used
+Name **msgget %d is defined in src/mpi/errhan/errnames.txt:569 but never used
+Name **CreateFileMapping %d is defined in src/mpi/errhan/errnames.txt:552 but never used
+Name **ibv_post_srq_recv %d is defined in src/mpi/errhan/errnames.txt:774 but never used
+Name **handle_sock_op is defined in src/mpi/errhan/errnames.txt:593 but never used
+Name **progress is defined in src/mpi/errhan/errnames.txt:626 but never used
+Name **ibv_create_qp is defined in src/mpi/errhan/errnames.txt:755 but never used
+Name **pmi_initack is defined in src/mpi/errhan/errnames.txt:1415 but never used
+Name **mqshm_receive is defined in src/mpi/errhan/errnames.txt:606 but never used
+Name **mqshm_unlink is defined in src/mpi/errhan/errnames.txt:565 but never used
+Name **msgctl is defined in src/mpi/errhan/errnames.txt:566 but never used
+Name **ibv_post_recv %d is defined in src/mpi/errhan/errnames.txt:764 but never used
+Name **MPIU_Strdup is defined in src/mpi/errhan/errnames.txt:544 but never used
+Name **ex_finalize is defined in src/mpi/errhan/errnames.txt:455 but never used
+Name **ibv_query_device %s is defined in src/mpi/errhan/errnames.txt:760 but never used
+Name **boot_create is defined in src/mpi/errhan/errnames.txt:563 but never used
+Name **ibv_create_comp_channel %s is defined in src/mpi/errhan/errnames.txt:736 but never used
+Name **pmi_kvsfence is defined in src/mpi/errhan/errnames.txt:1431 but never used
+Name **handle_written is defined in src/mpi/errhan/errnames.txt:619 but never used
+Name **pmi_invalid_clique_size %d is defined in src/pmi/errnames.txt:42 but never used
+Name **boot_unlink is defined in src/mpi/errhan/errnames.txt:564 but never used
+Name **pmi_init_send is defined in src/mpi/errhan/errnames.txt:1414 but never used
+Name **pmi_nameservpublish is defined in src/mpi/errhan/errnames.txt:1444 but never used
+Name **pmi_fullinit is defined in src/mpi/errhan/errnames.txt:1417 but never used
+Name **shm_op is defined in src/mpi/errhan/errnames.txt:628 but never used
+Name **key_too_long is defined in src/mpi/errhan/errnames.txt:1412 but never used
+Name **shmsize %d is defined in src/mpi/errhan/errnames.txt:685 but never used
+Name **pmi_jobgetid %s is defined in src/mpi/errhan/errnames.txt:1424 but never used
+Name **MapViewOfFileEx %d is defined in src/mpi/errhan/errnames.txt:558 but never used
+Name **open %s %d %d is defined in src/mpi/errhan/errnames.txt:550 but never used
+Name **shm_unlink %s %d is defined in src/mpi/errhan/errnames.txt:608 but never used
+Name **mq_receive %d is defined in src/mpi/errhan/errnames.txt:587 but never used
+Name **ibv_create_ah %p is defined in src/mpi/errhan/errnames.txt:768 but never used
+Name **cmd_too_long is defined in src/mpi/errhan/errnames.txt:1411 but never used
+Name **MapViewOfFileEx is defined in src/mpi/errhan/errnames.txt:557 but never used
+Name **connect_to_pm is defined in src/mpi/errhan/errnames.txt:1446 but never used
+Name **msgsnd is defined in src/mpi/errhan/errnames.txt:570 but never used
+Name **mqshm_create is defined in src/mpi/errhan/errnames.txt:604 but never used
+Name **ibv_open_device is defined in src/mpi/errhan/errnames.txt:749 but never used

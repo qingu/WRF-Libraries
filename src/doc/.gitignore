@@ -1,0 +1,11 @@
+*.[oaxd]
+*.mod
+*.MOD
+*~*
+*.aux
+*.dvi
+*.log
+*.ps
+*.pdf
+*.tex
+*.toc

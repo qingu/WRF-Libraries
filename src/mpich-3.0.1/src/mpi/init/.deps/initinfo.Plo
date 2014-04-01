@@ -1,0 +1,8 @@
+src/mpi/init/initinfo.lo: src/mpi/init/initinfo.c ./src/include/mpi.h \
+ ./src/include/mpio.h ./src/include/mpi.h ./src/include/mpichinfo.h
+
+./src/include/mpi.h:
+
+./src/include/mpio.h:
+
+./src/include/mpichinfo.h:

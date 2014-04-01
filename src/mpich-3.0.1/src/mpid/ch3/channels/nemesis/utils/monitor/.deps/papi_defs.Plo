@@ -1,0 +1,9 @@
+src/mpid/ch3/channels/nemesis/utils/monitor/papi_defs.lo: \
+ src/mpid/ch3/channels/nemesis/utils/monitor/papi_defs.c \
+ ./src/include/mpichconf.h ./src/include/nopackage.h ./src/include/mpibase.h
+
+./src/include/mpichconf.h:
+
+./src/include/nopackage.h:
+
+./src/include/mpibase.h:
