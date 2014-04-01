@@ -14,8 +14,8 @@ contrib/tools/png-fix-itxt.o: contrib/tools/png-fix-itxt.c /usr/include/stdio.h 
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zlib.h \
- /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zconf.h \
+ /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zlib.h \
+ /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zconf.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -72,9 +72,9 @@ contrib/tools/png-fix-itxt.o: contrib/tools/png-fix-itxt.c /usr/include/stdio.h 
 
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
 
-/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zlib.h:
+/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zlib.h:
 
-/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zconf.h:
+/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zconf.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 

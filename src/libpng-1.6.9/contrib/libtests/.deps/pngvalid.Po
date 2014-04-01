@@ -44,8 +44,8 @@ contrib/libtests/pngvalid.o: contrib/libtests/pngvalid.c /usr/include/signal.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/xlocale.h \
- /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zlib.h \
- /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zconf.h \
+ /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zlib.h \
+ /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zconf.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -185,9 +185,9 @@ contrib/libtests/../../pngconf.h:
 
 /usr/include/xlocale.h:
 
-/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zlib.h:
+/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zlib.h:
 
-/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zconf.h:
+/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zconf.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 

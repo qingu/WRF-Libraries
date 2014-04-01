@@ -53,8 +53,8 @@ contrib/tools/pngfix.o: contrib/tools/pngfix.c /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/sigset.h /usr/include/time.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
- /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zlib.h \
- /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zconf.h \
+ /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zlib.h \
+ /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zconf.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -179,9 +179,9 @@ contrib/tools/../../pngconf.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zlib.h:
+/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zlib.h:
 
-/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/include/zconf.h:
+/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/include/zconf.h:
 
 /usr/include/unistd.h:
 
