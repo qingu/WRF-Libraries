@@ -13,7 +13,7 @@
 #ifndef MPICHINFO_H_INCLUDED
 #define MPICHINFO_H_INCLUDED
 
-#define MPICH_CONFIGURE_ARGS_CLEAN "--prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort FC=ifort FCFLAGS=-fpic -mcmodel=medium CC=icc CFLAGS=-fpic -mcmodel=medium"
+#define MPICH_CONFIGURE_ARGS_CLEAN "--prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort FC=ifort FCFLAGS=-fpic -mcmodel=medium CC=icc CFLAGS=-fpic -mcmodel=medium"
 #define MPICH_VERSION_DATE "Thu Dec 20 14:27:22 CST 2012"
 #define MPICH_DEVICE "ch3:nemesis"
 #define MPICH_COMPILER_CC "icc -fpic -mcmodel=medium   -O2"

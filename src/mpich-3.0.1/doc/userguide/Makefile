@@ -1,5 +1,5 @@
 ALL: all-redirect
-SHELL = /bin/sh
+SHELL = /bin/bash
 srcdir = .
 MPICH_VERSION = 3.0.1
 .SUFFIXES: .pdf .ps .dvi .tex

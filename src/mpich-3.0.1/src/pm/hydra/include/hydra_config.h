@@ -659,7 +659,7 @@
 #define HYDRA_CC "icc  -fpic -mcmodel=medium  "
 
 /* Configure arguments */
-#define HYDRA_CONFIGURE_ARGS_CLEAN "'--disable-option-checking' '--prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort' 'FC=ifort' 'FCFLAGS=-fpic -mcmodel=medium -O2' 'CC=icc' 'CFLAGS=-fpic -mcmodel=medium -O2' '--cache-file=/dev/null' '--srcdir=.' 'LDFLAGS= ' 'LIBS=-lrt -lpthread ' 'CPPFLAGS= -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpi/romio/include'"
+#define HYDRA_CONFIGURE_ARGS_CLEAN "'--disable-option-checking' '--prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort' 'FC=ifort' 'FCFLAGS=-fpic -mcmodel=medium -O2' 'CC=icc' 'CFLAGS=-fpic -mcmodel=medium -O2' '--cache-file=/dev/null' '--srcdir=.' 'LDFLAGS= ' 'LIBS=-lrt -lpthread ' 'CPPFLAGS= -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpi/romio/include'"
 
 /* C++ compiler */
 #define HYDRA_CXX "c++    "

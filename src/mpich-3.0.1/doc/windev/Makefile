@@ -1,5 +1,5 @@
 ALL: all-redirect
-SHELL = /bin/sh
+SHELL = /bin/bash
 srcdir = .
 MPICH2_VERSION = @MPICH2_VERSION@
 

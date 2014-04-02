@@ -1,8 +1,8 @@
 adio/common/eof_offset.lo: adio/common/eof_offset.c ./adio/include/adio.h \
  ./adio/include/romioconf.h ./adio/include/nopackage.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpi.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpio.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpi.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpi.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpio.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpi.h \
  /usr/include/fcntl.h /usr/include/features.h /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/predefs.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -49,7 +49,7 @@ adio/common/eof_offset.lo: adio/common/eof_offset.c ./adio/include/adio.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h \
  /usr/include/asm-generic/errno-base.h ./adio/include/adioi.h \
  ./adio/include/adioi_error.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/glue_romio.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/glue_romio.h \
  ./adio/include/adioi_fs_proto.h ./adio/include/mpio_error.h \
  ./adio/include/mpipr.h ./adio/include/adio_extern.h
 
@@ -59,9 +59,9 @@ adio/common/eof_offset.lo: adio/common/eof_offset.c ./adio/include/adio.h \
 
 ./adio/include/nopackage.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpi.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpi.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpio.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpio.h:
 
 /usr/include/fcntl.h:
 
@@ -167,7 +167,7 @@ adio/common/eof_offset.lo: adio/common/eof_offset.c ./adio/include/adio.h \
 
 ./adio/include/adioi_error.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/glue_romio.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/glue_romio.h:
 
 ./adio/include/adioi_fs_proto.h:
 

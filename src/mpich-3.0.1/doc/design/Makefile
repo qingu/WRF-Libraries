@@ -1,5 +1,5 @@
 ALL: all-redirect
-SHELL = /bin/sh
+SHELL = /bin/bash
 
 srcdir = .
 .SUFFIXES: .pdf .dvi .tex

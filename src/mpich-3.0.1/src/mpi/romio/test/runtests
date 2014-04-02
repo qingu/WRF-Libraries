@@ -1,5 +1,5 @@
 #! /bin/sh
-prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort
+prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort
 exec_prefix=${prefix}
 bindir=${exec_prefix}/bin
 mpirun="${bindir}/mpiexec"
@@ -11,7 +11,7 @@ makeeach=0
 check_at_once=1
 quiet=0
 MAKE="make"
-srcdir=/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpi/romio/test
+srcdir=/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpi/romio/test
 check_canrun=0
 subset_only=0
 FILENAME=test

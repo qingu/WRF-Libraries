@@ -1,4 +1,4 @@
-prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort
+prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

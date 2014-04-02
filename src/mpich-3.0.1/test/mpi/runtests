@@ -42,7 +42,7 @@ use File::Path;
 # Global variables
 $MPIMajorVersion = "3";
 $MPIMinorVersion = "0";
-$mpiexec = "/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort/bin/mpiexec";    # Name of mpiexec program (including path, if necessary)
+$mpiexec = "/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort/bin/mpiexec";    # Name of mpiexec program (including path, if necessary)
 $testIsStrict = "false";
 $MPIhasMPIX   = "yes";
 $np_arg  = "-n";         # Name of argument to specify the number of processes

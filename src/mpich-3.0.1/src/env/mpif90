@@ -28,7 +28,7 @@
 #
 # Directory locations: Fixed for any MPI implementation.
 # Set from the directory arguments to configure (e.g., --prefix=/usr/local)
-prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort
+prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort
 exec_prefix=${prefix}
 sysconfdir=${prefix}/etc
 includedir=${prefix}/include

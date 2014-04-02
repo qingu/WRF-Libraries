@@ -40,13 +40,13 @@ src/mpid/ch3/channels/nemesis/src/mpid_nem_init.lo: \
  ./src/mpid/ch3/channels/nemesis/include/mpid_nem_datatypes.h \
  ./src/mpid/ch3/channels/nemesis/include/mpid_nem_debug.h \
  ./src/mpid/ch3/channels/nemesis/include/mpid_nem_atomics.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/opa_primitives.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/opa_config.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/opa_util.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_barrier.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_ops.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_emulated.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/opa_primitives.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/opa_config.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/opa_util.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_barrier.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_ops.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_emulated.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h /usr/include/time.h \
@@ -91,13 +91,13 @@ src/mpid/ch3/channels/nemesis/src/mpid_nem_init.lo: \
  ./src/util/wrappers/mpiu_os_wrappers_pre.h \
  ./src/mpid/ch3/channels/nemesis/include/mpid_nem_memdefs.h \
  ./src/include/mpimem.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h /usr/include/ctype.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h \
  ./src/include/mpibase.h ./src/mpid/ch3/channels/nemesis/include/mpid_nem_impl.h \
  ./src/mpid/ch3/channels/nemesis/utils/monitor/my_papi_defs.h \
  ./src/mpid/ch3/channels/nemesis/include/mpidi_ch3_impl.h \
@@ -246,19 +246,19 @@ src/mpid/ch3/channels/nemesis/src/mpid_nem_init.lo: \
 
 ./src/mpid/ch3/channels/nemesis/include/mpid_nem_atomics.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/opa_primitives.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/opa_primitives.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/opa_config.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/opa_config.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/opa_util.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/opa_util.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_barrier.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_barrier.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_ops.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_gcc_intel_32_64_ops.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_emulated.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src/primitives/opa_emulated.h:
 
 /usr/include/pthread.h:
 
@@ -350,19 +350,19 @@ src/mpid/ch3/channels/nemesis/src/mpid_nem_init.lo: \
 
 ./src/include/mpimem.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h:
 
 /usr/include/ctype.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h:
 
 ./src/include/mpibase.h:
 

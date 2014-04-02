@@ -34,8 +34,8 @@ src/util/msgs/msgprint.lo: src/util/msgs/msgprint.c ./src/include/mpichconf.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h /usr/include/alloca.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h \
  /usr/include/string.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/bits/string.h \
  /usr/include/x86_64-linux-gnu/bits/string2.h \
@@ -43,10 +43,10 @@ src/util/msgs/msgprint.lo: src/util/msgs/msgprint.c ./src/include/mpichconf.h \
  /usr/include/inttypes.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h \
  ./src/include/mpibase.h
 
 ./src/include/mpichconf.h:
@@ -125,9 +125,9 @@ src/util/msgs/msgprint.lo: src/util/msgs/msgprint.c ./src/include/mpichconf.h \
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h:
 
 /usr/include/string.h:
 
@@ -147,12 +147,12 @@ src/util/msgs/msgprint.lo: src/util/msgs/msgprint.c ./src/include/mpichconf.h \
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h:
 
 ./src/include/mpibase.h:

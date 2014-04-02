@@ -4,7 +4,7 @@
 # 
 
 # Define prefix so PATH and MANPATH can be updated.
-setenv        prefix        /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort
+setenv        prefix        /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort
 setenv        exec_prefix   ${prefix}
 prepend-path  PATH          ${exec_prefix}/bin
 prepend-path  MANPATH       ${prefix}/share/man

@@ -176,7 +176,7 @@ am__relativize = \
 VPATH = VPATH=.:${srcdir}
 ABIVERSION = 10:1:0
 ABIVERSIONFLAGS = -version-info $(ABIVERSION)
-ACLOCAL = ${SHELL} /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/confdb/missing --run aclocal-1.12
+ACLOCAL = ${SHELL} /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/confdb/missing --run aclocal-1.12
 ADDRESS_KIND = 8
 ALLOCA = 
 AMTAR = $${TAR-tar}
@@ -185,9 +185,9 @@ AR = ar
 AR_FLAGS = cr
 AS = as
 ASSERT_LEVEL = 
-AUTOCONF = ${SHELL} /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/confdb/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/confdb/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/confdb/missing --run automake-1.12
+AUTOCONF = ${SHELL} /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/confdb/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/confdb/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/confdb/missing --run automake-1.12
 AWK = gawk
 BASH_SHELL = /bin/bash
 BGQ_INSTALL_DIR = 
@@ -197,11 +197,11 @@ CCDEPMODE = depmode=gcc3
 CFLAGS = -fpic -mcmodel=medium   -O2
 CMB_1INT_ALIGNMENT = __attribute__((aligned(32)))
 CMB_STATUS_ALIGNMENT = __attribute__((aligned(32)))
-CONFIGURE_ARGS_CLEAN = --prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort FC=ifort FCFLAGS=-fpic -mcmodel=medium CC=icc CFLAGS=-fpic -mcmodel=medium
-CONFIGURE_ARGUMENTS =  '--prefix=/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort' 'FC=ifort' 'FCFLAGS=-fpic -mcmodel=medium' 'CC=icc' 'CFLAGS=-fpic -mcmodel=medium'
+CONFIGURE_ARGS_CLEAN = --prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort FC=ifort FCFLAGS=-fpic -mcmodel=medium CC=icc CFLAGS=-fpic -mcmodel=medium
+CONFIGURE_ARGUMENTS =  '--prefix=/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort' 'FC=ifort' 'FCFLAGS=-fpic -mcmodel=medium' 'CC=icc' 'CFLAGS=-fpic -mcmodel=medium'
 COUNT_KIND = 8
 CPP = icc -E
-CPPFLAGS =  -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpi/romio/include
+CPPFLAGS =  -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpi/romio/include
 CXX = c++
 CXXCPP = c++ -E
 CXXDEPMODE = depmode=gcc3
@@ -289,7 +289,7 @@ LPMPILIBNAME =
 LTLIBOBJS = 
 MAINT = 
 MAKE = make
-MAKEINFO = ${SHELL} /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/confdb/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/confdb/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = mkdir -p
 MPIBASEMODNAME = mpi_base
@@ -466,7 +466,7 @@ RSH =
 SED = /bin/sed
 SET_CFLAGS = CFLAGS=
 SET_MAKE = MAKE=make
-SHELL = /bin/sh
+SHELL = /bin/bash
 SIZEOF_FC_CHARACTER = 1
 SIZEOF_FC_DOUBLE_PRECISION = 8
 SIZEOF_FC_INTEGER = 4
@@ -493,10 +493,10 @@ WRAPPER_LDFLAGS =
 WRAPPER_LIBS = -lopa -lmpl  -lrt -lpthread  
 WTIME_DOUBLE_TYPE = REAL*8
 XARGS_NODATA_OPT = -r
-abs_builddir = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/test
-abs_srcdir = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/test
-abs_top_builddir = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1
-abs_top_srcdir = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1
+abs_builddir = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/test
+abs_srcdir = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/test
+abs_top_builddir = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1
+abs_top_srcdir = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1
 ac_ct_AR = ar
 ac_ct_CC = 
 ac_ct_CXX = c++
@@ -532,15 +532,15 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/confdb/install-sh
+install_sh = ${SHELL} /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/confdb/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 libmpich_so_version = 10:1:0
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-master_top_builddir = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1
-master_top_srcdir = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1
+master_top_builddir = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1
+master_top_srcdir = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1
 mkdir_p = $(MKDIR_P)
 mmx_copy_s = 
 mpich_libtool_static_flag = -static
@@ -555,7 +555,7 @@ nemesis_networks = tcp
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 pm_name = hydra
-prefix = /home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort
+prefix = /home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

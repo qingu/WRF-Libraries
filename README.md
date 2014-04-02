@@ -4,6 +4,31 @@ WRF-Libraries
 Based on Harvard's GEOS-Chem-Libraries project, fix some bugs and add jasper and  libpng needed by WRF.
 You can see the GEOS-Chen_Libraries's wiki page : <http://wiki.seas.harvard.edu/geos-chem/index.php/Installing_libraries_for_GEOS-Chem>
 
+
+##New Features
+
+1. Add jasper and libpng libraries needed by WRF.
+
+2. Add mpich installation.
+
+
+##Installation
+
+安装成功会提示：
+
+```
+-------+---------+-------------------------------------
+Config | Install |             Package
+-------+---------+-------------------------------------
+  ok   |   ok    | zlib-1.2.6 
+  ok   |   ok    | jasper-1.900.1 
+  ok   |   ok    | libpng-1.6.9 
+  ok   |   ok    | hdf5-1.8.12 
+  ok   |   ok    | netcdf-4.2 
+  ok   |   ok    | netcdf-fortran-4.2 
+-------+---------+-------------------------------------
+```
+
 ##Fixed Bugs
 
 ###Bug 1
@@ -21,9 +46,3 @@ You can see the GEOS-Chen_Libraries's wiki page : <http://wiki.seas.harvard.edu/
 ###Bug 3
 src/GNUmakefile中distclean目标规则需要修改
 
-
-##New Features
-
-1. Add jasper and libpng libraries needed by WRF.
-
-2. Add mpich installation.

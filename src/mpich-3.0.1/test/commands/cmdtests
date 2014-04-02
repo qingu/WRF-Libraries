@@ -8,7 +8,7 @@
 # mpiexec - environment handling; stdout, stderr redirection
 #
 # Configuration values
-my $prefix      = "/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort";
+my $prefix      = "/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort";
 my $exec_prefix = "${prefix}";
 my $bindir      = "${exec_prefix}/bin";
 my $srcdir      = ".";

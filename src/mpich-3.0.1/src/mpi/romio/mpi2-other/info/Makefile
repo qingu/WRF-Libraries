@@ -1,15 +1,15 @@
 CC          = icc
 AR          = ar
-LIBNAME     = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/lib/libmpich.a
+LIBNAME     = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/lib/libmpich.a
 RANLIB      = ranlib
-srcdir      = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpi/romio/mpi2-other/info
+srcdir      = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpi/romio/mpi2-other/info
 CC_SHL      = 
-SHLIBNAME   = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/lib/libmpich
+SHLIBNAME   = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/lib/libmpich
 
 INCLUDE_DIR = -I. -I../../include -I${srcdir}/../../mpi-io -I${srcdir}/../../adio/include -I../../adio/include
 CFLAGS      = -DHAVE_MPI_INFO_SRC -fpic -mcmodel=medium   -O2  -DFORTRANUNDERSCORE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -DHAVE_ROMIOCONF_H -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 $(MPIOPROFILE) $(INCLUDE_DIR)
 
-top_builddir  = /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1
+top_builddir  = /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1
 LIBTOOL       = $(SHELL) $(top_builddir)/libtool
 C_COMPILE_SHL = $(CC_SHL)
 

@@ -32,9 +32,9 @@ adio/ad_testfs/ad_testfs_resize.lo: adio/ad_testfs/ad_testfs_resize.c \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h ./adio/include/adio.h \
  ./adio/include/romioconf.h ./adio/include/nopackage.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpi.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpio.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpi.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpi.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpio.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpi.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/time.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/string.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/xlocale.h \
@@ -55,7 +55,7 @@ adio/ad_testfs/ad_testfs_resize.lo: adio/ad_testfs/ad_testfs_resize.c \
  /usr/include/x86_64-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h \
  /usr/include/asm-generic/errno-base.h ./adio/include/adioi.h \
  ./adio/include/adioi_error.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/glue_romio.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/glue_romio.h \
  ./adio/include/adioi_fs_proto.h ./adio/include/mpio_error.h \
  ./adio/include/mpipr.h
 
@@ -133,9 +133,9 @@ adio/ad_testfs/ad_testfs.h:
 
 ./adio/include/nopackage.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpi.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpi.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/mpio.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/mpio.h:
 
 /usr/include/x86_64-linux-gnu/sys/stat.h:
 
@@ -189,7 +189,7 @@ adio/ad_testfs/ad_testfs.h:
 
 ./adio/include/adioi_error.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/include/glue_romio.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/include/glue_romio.h:
 
 ./adio/include/adioi_fs_proto.h:
 

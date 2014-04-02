@@ -52,16 +52,16 @@ src/pmi/simple/simple_pmi.lo: src/pmi/simple/simple_pmi.c \
  /usr/include/x86_64-linux-gnu/asm/socket.h /usr/include/asm-generic/socket.h \
  /usr/include/x86_64-linux-gnu/asm/sockios.h /usr/include/asm-generic/sockios.h \
  ./src/include/mpibase.h ./src/include/mpimem.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h /usr/include/ctype.h \
  /usr/include/inttypes.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h \
- /home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h \
+ /home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h \
  ./src/include/pmi.h src/pmi/simple/simple_pmiutil.h /usr/include/assert.h \
  ./src/include/mpi.h ./src/include/mpio.h ./src/include/mpi.h \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -213,9 +213,9 @@ src/pmi/simple/simple_pmi.lo: src/pmi/simple/simple_pmi.c \
 
 ./src/include/mpimem.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplconfig.h:
 
 /usr/include/ctype.h:
 
@@ -227,13 +227,13 @@ src/pmi/simple/simple_pmi.lo: src/pmi/simple/simple_pmi.c \
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpl_valgrind.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplstr.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mpltrmem.h:
 
-/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h:
+/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include/mplenv.h:
 
 ./src/include/pmi.h:
 

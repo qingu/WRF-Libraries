@@ -1,8 +1,8 @@
-s/^#undef  *\([ABCDEFGHIJKLMNOPQRSTUVWXYZ_]\)/#undef MPL_\1/
-s/^#undef  *\([abcdefghijklmnopqrstuvwxyz]\)/#undef _mpl_\1/
-s/^#define  *\([ABCDEFGHIJKLMNOPQRSTUVWXYZ_][abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_]*\)\(.*\)/#ifndef MPL_\1 \
-#define MPL_\1 \2 \
+s/^#undef  *\([ABCDEFGHIJKLMNOPQRSTUVWXYZ_]\)/#undef MPL_/
+s/^#undef  *\([abcdefghijklmnopqrstuvwxyz]\)/#undef _mpl_/
+s/^#define  *\([ABCDEFGHIJKLMNOPQRSTUVWXYZ_][abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_]*\)\(.*\)/#ifndef MPL_ \
+#define MPL_  \
 #endif/
-s/^#define  *\([abcdefghijklmnopqrstuvwxyz][abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_]*\)\(.*\)/#ifndef _mpl_\1 \
-#define _mpl_\1 \2 \
+s/^#define  *\([abcdefghijklmnopqrstuvwxyz][abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_]*\)\(.*\)/#ifndef _mpl_ \
+#define _mpl_  \
 #endif/

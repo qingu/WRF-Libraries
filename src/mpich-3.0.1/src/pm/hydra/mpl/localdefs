@@ -3,5 +3,5 @@
 # by the top-level configure.  This lets us propagate shell variable changes
 # back upstream.
 
-CPPFLAGS=" -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF_Libraries/src/mpich-3.0.1/src/mpi/romio/include"
+CPPFLAGS=" -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpl/include -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/openpa/src -I/home/metman/git-projects/WRF-Libraries/src/mpich-3.0.1/src/mpi/romio/include"
 

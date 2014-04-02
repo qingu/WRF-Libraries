@@ -1,6 +1,6 @@
 #! /bin/sh
 file=`pwd`/test-port
-prefix="/home/metman/git-projects/WRF_Libraries/opt/ifort/nc4/../mpich_ifort"
+prefix="/home/metman/git-projects/WRF-Libraries/opt/ifort/nc4/../mpich_ifort"
 exec_prefix="${prefix}"
 mpiexec="${exec_prefix}/bin/mpiexec"
 starter="$mpiexec -n 1"
